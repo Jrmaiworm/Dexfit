@@ -17,6 +17,10 @@ export const TextContainer = styled.div``;
 export const WhiteText = styled.div`
   color: white;
 `;
+export const Text = styled.div`
+
+color: ${props => (props.pink ? '#ff0181' : 'white')};
+`;
 
 export const HighlightTextContainer = styled.div`
   display: flex;
@@ -27,19 +31,23 @@ export const Paragraph = styled(WhiteText)`
   font-size: 24px;
   font-weight: 400;
 `;
-
 export const Button = styled.div`
   height: 78px;
   width: 100%;
-  max-width: 420px;
   background-color: #ef3693;
   color: white;
   font-weight: 700;
   font-size: 20px;
-  padding: 3;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding-left: px; 
+  padding-right: px;
   cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    background-color: #f687b3;
+    color: #000;
+  }
 `;

@@ -4,11 +4,10 @@ import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import {
   Button,
-  Container,
   HighlightTextContainer,
   Paragraph,
+  Text,
   TextContainer,
-  WhiteText,
 } from "./styles";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -48,9 +47,9 @@ export default function Home() {
             <br />
             PODEROSAS:
             <br />
-            <WhiteText>descubra o segredo</WhiteText>
+            <Text>descubra o segredo</Text>
             <HighlightTextContainer>
-              <WhiteText>para&nbsp;</WhiteText>
+              <Text>para&nbsp;</Text>
               emagrecer
             </HighlightTextContainer>
             <br />
@@ -78,17 +77,17 @@ export default function Home() {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column", md: "row" },
           backgroundColor: "rgba(108, 93, 158, 0.19)",
+          alignItems:'center',
           padding: 5,
           textAlign: "center",
-          minWidth: 1240,
-          justifyContent: "space-around",
+          justifyContent: { xs: "center", md: "space-around" },
         }}
       >
         <Box
           sx={{
-            width: 258,
+            width: { xs: '90%', md: '20%'} ,
             fontWeight: 900,
             fontSize: 24,
           }}
@@ -110,7 +109,7 @@ export default function Home() {
 
         <Box
           sx={{
-            width: 258,
+            width: { xs: '90%', md: '20%'} ,
             fontWeight: 900,
             fontSize: 24,
           }}
@@ -132,7 +131,7 @@ export default function Home() {
 
         <Box
           sx={{
-            width: 258,
+            width: { xs: '90%', md: '20%'} ,
             fontWeight: 900,
             fontSize: 24,
           }}
@@ -159,7 +158,7 @@ export default function Home() {
           flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           justifyContent: "center",
-          width: "100%",
+          width:  "100%",
           padding: { xs: 5, md: 0 },
         }}
       >
@@ -174,19 +173,20 @@ export default function Home() {
         </Box>
         <Box
           sx={{
-            width: { xs: "100%", md: "50%" },
+            width:  { xs: '100%', md: '50%' } ,
             padding: 5,
+           
           }}
         >
-          <TextContainer style={{ display: "flex", flexDirection: "row" }}>
-            <WhiteText>Sinta-se uma&nbsp;</WhiteText>
-            <HighlightTextContainer>MULHER</HighlightTextContainer>
-          </TextContainer>
-          <TextContainer style={{ display: "flex", flexDirection: "row" }}>
-            <HighlightTextContainer>COMPLETA&nbsp;</HighlightTextContainer>
-            <WhiteText>novamente!</WhiteText>
-          </TextContainer>
-          <br />
+          <Box   sx={{
+            width: '100%',
+            padding: 5, 
+            backgroundColor:'red'
+           
+          }}>
+            <Text>Sinta-se uma&nbsp;  <Text pink>MULHER</Text></Text>
+            <Text pink>COMPLETA&nbsp;  <Text>novamente!</Text></Text>
+          </Box>
           <Box
             sx={{
               fontWeight: 700,
@@ -207,7 +207,7 @@ export default function Home() {
               }}
             />
 
-            <WhiteText
+            <Text
               style={{
                 fontWeight: 400,
                 fontSize: 20,
@@ -219,7 +219,7 @@ export default function Home() {
             >
               Transforme seu corpo&nbsp;
               <div style={{ fontWeight: 700 }}>sem efeitos colaterais</div>
-            </WhiteText>
+            </Text>
           </Box>
 
           <Box
@@ -242,7 +242,7 @@ export default function Home() {
               }}
             />
 
-            <WhiteText
+            <Text
               style={{
                 fontWeight: 400,
                 fontSize: 20,
@@ -255,7 +255,7 @@ export default function Home() {
               Recupere sua&nbsp;
               <div style={{ fontWeight: 700 }}>autoestima&nbsp;</div>e brilhe
               como nunca
-            </WhiteText>
+            </Text>
           </Box>
 
           <Box
@@ -278,7 +278,7 @@ export default function Home() {
               }}
             />
 
-            <WhiteText
+            <Text
               style={{
                 fontWeight: 400,
                 fontSize: 20,
@@ -293,7 +293,7 @@ export default function Home() {
                 reduzir os números do manequim&nbsp;
               </div>
               e arrasar com sua nova silhueta
-            </WhiteText>
+            </Text>
           </Box>
 
           <Box
@@ -316,7 +316,7 @@ export default function Home() {
               }}
             />
 
-            <WhiteText
+            <Text
               style={{
                 fontWeight: 400,
                 fontSize: 20,
@@ -329,7 +329,7 @@ export default function Home() {
               Desfrute da&nbsp;
               <div style={{ fontWeight: 700 }}>sensação de saciedade&nbsp;</div>
               duradoura e conquiste o controle sobre a sua alimentação
-            </WhiteText>
+            </Text>
           </Box>
 
           <Box
@@ -352,7 +352,7 @@ export default function Home() {
               }}
             />
 
-            <WhiteText
+            <Text
               style={{
                 fontWeight: 400,
                 fontSize: 20,
@@ -363,7 +363,7 @@ export default function Home() {
               }}
             >
               <div style={{ fontWeight: 700 }}>100% NATURAL</div>
-            </WhiteText>
+            </Text>
           </Box>
 
           <Button>EU QUERO SER UMA MULHER COMPLETA</Button>
