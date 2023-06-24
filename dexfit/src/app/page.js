@@ -19,34 +19,28 @@ export default function Home() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: "100%",
+        minHeight: "100vh",
         backgroundColor: "#1e1b2c",
         color: "#ff0181",
         fontSize: 40,
         fontWeight: 700,
         alignItems: "center",
-        width: "100vw",
-        paddingBottom: 500,
       }}
     >
       <Box
         sx={{
-          height: "100%",
-          backgroundColor: "#1e1b2c",
-          color: "#ff0181",
-          fontSize: 40,
-          fontWeight: 700,
-          display: { xs: "column", md: "flex" },
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
-          width: "100vw",
+          width: "100%",
+          padding: { xs: 5, md: 0 },
         }}
       >
         <Box
           sx={{
+            flex: 1,
             width: { xs: "100%", md: "50%" },
             padding: 5,
-            backgroundColor: "#1e1b2c",
-            "&:hover": {},
           }}
         >
           <TextContainer>
@@ -70,7 +64,7 @@ export default function Home() {
           </TextContainer>
         </Box>
 
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flex: 1 }}>
           <Image
             style={{ objectFit: "contain" }}
             layout="responsive"
@@ -80,14 +74,12 @@ export default function Home() {
           />
         </Box>
       </Box>
+
       <Box
         sx={{
           display: "flex",
-          alignSelf: "center",
           flexDirection: "row",
-
           backgroundColor: "rgba(108, 93, 158, 0.19)",
-
           padding: 5,
           textAlign: "center",
           minWidth: 1240,
@@ -96,10 +88,7 @@ export default function Home() {
       >
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "column",
             width: 258,
-
             fontWeight: 900,
             fontSize: 24,
           }}
@@ -121,10 +110,7 @@ export default function Home() {
 
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "column",
             width: 258,
-
             fontWeight: 900,
             fontSize: 24,
           }}
@@ -146,10 +132,7 @@ export default function Home() {
 
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "column",
             width: 258,
-
             fontWeight: 900,
             fontSize: 24,
           }}
@@ -169,21 +152,18 @@ export default function Home() {
           </Paragraph>
         </Box>
       </Box>
-      <br />
+
       <Box
         sx={{
-          height: "100%",
-          backgroundColor: "#1e1b2c",
-          color: "#ff0181",
-          fontSize: 40,
-          fontWeight: 700,
-          display: { xs: "column", md: "flex" },
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           justifyContent: "center",
-          width: "100vw",
+          width: "100%",
+          padding: { xs: 5, md: 0 },
         }}
       >
-        <Box sx={{}}>
+        <Box>
           <Image
             style={{ objectFit: "contain" }}
             layout="responsive"
@@ -196,11 +176,6 @@ export default function Home() {
           sx={{
             width: { xs: "100%", md: "50%" },
             padding: 5,
-            backgroundColor: "#1e1b2c",
-            "&:hover": {},
-            display: "flex",
-            flexDirection: "column",
-            width: 950, //Fiquei com medo disso
           }}
         >
           <TextContainer style={{ display: "flex", flexDirection: "row" }}>
@@ -216,10 +191,8 @@ export default function Home() {
             sx={{
               fontWeight: 700,
               fontSize: 20,
-
               display: "flex",
               flexDirection: "row",
-
               alignItems: "center",
               marginBottom: 3,
             }}
@@ -240,6 +213,8 @@ export default function Home() {
                 fontSize: 20,
                 display: "flex",
                 flexDirection: "row",
+
+                display: "inline-block",
               }}
             >
               Transforme seu corpo&nbsp;
@@ -251,10 +226,8 @@ export default function Home() {
             sx={{
               fontWeight: 700,
               fontSize: 20,
-
               display: "flex",
               flexDirection: "row",
-
               alignItems: "center",
               marginBottom: 3,
             }}
@@ -275,6 +248,8 @@ export default function Home() {
                 fontSize: 20,
                 display: "flex",
                 flexDirection: "row",
+
+                display: "inline-block",
               }}
             >
               Recupere sua&nbsp;
@@ -287,10 +262,8 @@ export default function Home() {
             sx={{
               fontWeight: 700,
               fontSize: 20,
-
               display: "flex",
               flexDirection: "row",
-
               alignItems: "center",
               marginBottom: 3,
             }}
@@ -311,6 +284,8 @@ export default function Home() {
                 fontSize: 20,
                 display: "flex",
                 flexDirection: "row",
+
+                display: "inline-block",
               }}
             >
               Prepare-se para&nbsp;
@@ -325,10 +300,8 @@ export default function Home() {
             sx={{
               fontWeight: 700,
               fontSize: 20,
-
               display: "flex",
               flexDirection: "row",
-
               alignItems: "center",
               marginBottom: 3,
             }}
@@ -346,16 +319,16 @@ export default function Home() {
             <WhiteText
               style={{
                 fontWeight: 400,
-                fontSize: 18,
+                fontSize: 20,
                 display: "flex",
                 flexDirection: "row",
+
+                display: "inline-block",
               }}
             >
               Desfrute da&nbsp;
-              <div style={{ fontWeight: 700 }}>
-                sensação de saciedade duradoura
-              </div>
-              e conquiste o controle sobre a sua alimentação
+              <div style={{ fontWeight: 700 }}>sensação de saciedade&nbsp;</div>
+              duradoura e conquiste o controle sobre a sua alimentação
             </WhiteText>
           </Box>
 
@@ -385,16 +358,17 @@ export default function Home() {
                 fontSize: 20,
                 display: "flex",
                 flexDirection: "row",
+
+                display: "inline-block",
               }}
             >
               <div style={{ fontWeight: 700 }}>100% NATURAL</div>
             </WhiteText>
           </Box>
+
           <Button>EU QUERO SER UMA MULHER COMPLETA</Button>
         </Box>
       </Box>
     </Box>
   );
 }
-//usar o layout responsive para imagens//
-//<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}></Box>//
