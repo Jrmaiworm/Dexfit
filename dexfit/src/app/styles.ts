@@ -9,13 +9,10 @@ export const Container = styled.div`
   flex-direction: row;
   display: flex;
   align-items: center;
-  width:100vw;
+  width: 100vw;
 `;
 
-export const TextContainer = styled.div`
-
-  
-`;
+export const TextContainer = styled.div``;
 
 export const WhiteText = styled.div`
   color: white;
@@ -34,11 +31,12 @@ export const Paragraph = styled(WhiteText)`
 export const Button = styled.div`
   height: 78px;
   width: 100%;
+  max-width: 420px;
   background-color: #ef3693;
   color: white;
   font-weight: 700;
   font-size: 20px;
-  padding:3;
+  padding: 3;
   display: flex;
   align-items: center;
   justify-content: center;
