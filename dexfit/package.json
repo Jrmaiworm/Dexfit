@@ -13,6 +13,12 @@
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^6.0.0-rc.6"
+  },
+  "devDependencies": {
+    "@types/node": "20.3.1",
+    "@types/react": "18.2.14",
+    "typescript": "5.1.3"
   }
 }
