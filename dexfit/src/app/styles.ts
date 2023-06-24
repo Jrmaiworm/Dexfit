@@ -9,11 +9,12 @@ export const Container = styled.div`
   flex-direction: row;
   display: flex;
   align-items: center;
+  width:100vw;
 `;
 
 export const TextContainer = styled.div`
-  width: 444px;
-  margin-left: 99px;
+
+  
 `;
 
 export const WhiteText = styled.div`
@@ -32,13 +33,12 @@ export const Paragraph = styled(WhiteText)`
 
 export const Button = styled.div`
   height: 78px;
-  width: 420px;
+  width: 100%;
   background-color: #ef3693;
   color: white;
-
   font-weight: 700;
-  font-size: 24px;
-
+  font-size: 20px;
+  padding:3;
   display: flex;
   align-items: center;
   justify-content: center;
