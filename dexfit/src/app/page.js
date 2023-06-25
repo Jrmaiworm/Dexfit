@@ -15,14 +15,14 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <Box
+    <Box className={montserrat.className}
       sx={{
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh",
         backgroundColor: "#1e1b2c",
         color: "#ff0181",
-        fontSize: 40,
+        fontSize: { xs: 30, md: 40 },
         fontWeight: 700,
         alignItems: "center",
         backgroundImage: 'url("/FUNDODEGRADE.png")',
@@ -44,6 +44,7 @@ export default function Home() {
           sx={{
             width: { xs: "100%", md: "40%" },
             padding: 5,
+            
           }}
         >
           <TextContainer>
@@ -57,17 +58,17 @@ export default function Home() {
               emagrecer
             </HighlightTextContainer>
             <br />
-            <Paragraph>
+            <Box sx={{ fontSize: { xs: 20, md: 30 },color: 'white'}}>
               Desperte a sua melhor versão com Dexfit! Esta cápsula exclusiva,
               desenvolvida especialmente para mulheres, apresenta uma fórmula
               100% natural.
-            </Paragraph>
+            </Box>
             <br />
             <Button>EU QUERO EMAGRECER</Button>
           </TextContainer>
         </Box>
 
-        <Box sx={{ flex: 1 }}>
+        <Box sx={{ flex: 1 }} >
           <Image
             style={{ objectFit: "contain" }}
             layout="responsive"
@@ -93,7 +94,7 @@ export default function Home() {
       >
         <Box
           sx={{
-            width: { xs: "90%", md: "20%" },
+            width: { xs: "70%", md: "20%" },
             fontWeight: 900,
             fontSize: 24,
           }}
@@ -202,6 +203,7 @@ export default function Home() {
               COMPLETA&nbsp; <Text>novamente!</Text>
             </Text>
           </Box>
+          <Box>
           <Box
             sx={{
               fontWeight: 700,
@@ -210,17 +212,15 @@ export default function Home() {
               flexDirection: "row",
               alignItems: "center",
               marginBottom: 3,
+              
             }}
           >
-            <div
-              style={{
-                backgroundColor: "rgba(239, 54, 147, 1)",
-                height: 16,
-                width: 16,
-                borderRadius: 100,
-                marginRight: 10,
-              }}
-            />
+           <Image
+           style={{ objectFit: "contain", marginRight: 5 }}
+            width={14}
+            height={14}
+            src="/circle.png"
+          />
 
             <Text
               style={{
@@ -247,15 +247,12 @@ export default function Home() {
               marginBottom: 3,
             }}
           >
-            <div
-              style={{
-                backgroundColor: "rgba(239, 54, 147, 1)",
-                height: 16,
-                width: 16,
-                borderRadius: 100,
-                marginRight: 10,
-              }}
-            />
+           <Image
+            style={{ objectFit: "contain", marginRight: 5 }}
+            width={14}
+            height={14}
+            src="/circle.png"
+          />
 
             <Text
               style={{
@@ -282,15 +279,12 @@ export default function Home() {
               marginBottom: 3,
             }}
           >
-            <div
-              style={{
-                backgroundColor: "rgba(239, 54, 147, 1)",
-                height: 16,
-                width: 16,
-                borderRadius: 100,
-                marginRight: 10,
-              }}
-            />
+           <Image
+             style={{ objectFit: "contain", marginRight: 5 }}
+            width={14}
+            height={14}
+            src="/circle.png"
+          />
 
             <Text
               style={{
@@ -318,15 +312,12 @@ export default function Home() {
               marginBottom: 3,
             }}
           >
-            <div
-              style={{
-                backgroundColor: "rgba(239, 54, 147, 1)",
-                height: 16,
-                width: 16,
-                borderRadius: 100,
-                marginRight: 10,
-              }}
-            />
+           <Image
+            style={{ objectFit: "contain", marginRight: 5 }}
+            width={14}
+            height={14}
+            src="/circle.png"
+          />
 
             <Text
               style={{
@@ -355,15 +346,12 @@ export default function Home() {
               marginBottom: 3,
             }}
           >
-            <div
-              style={{
-                backgroundColor: "rgba(239, 54, 147, 1)",
-                height: 16,
-                width: 16,
-                borderRadius: 100,
-                marginRight: 10,
-              }}
-            />
+           <Image
+             style={{ objectFit: "contain", marginRight: 5 }}
+            width={14}
+            height={14}
+            src="/circle.png"
+          />
 
             <Text
               style={{
@@ -377,6 +365,7 @@ export default function Home() {
             >
               <div style={{ fontWeight: 700 }}>100% NATURAL</div>
             </Text>
+          </Box>
           </Box>
 
           <Button>EU QUERO SER UMA MULHER COMPLETA</Button>
@@ -397,34 +386,22 @@ export default function Home() {
           sx={{
             width: { xs: "100%", md: "60%" },
             padding: 5,
+            fontSize: {xs:30, md:40}
           }}
         >
-          <div
-            style={{
-              fontWeight: 900,
-              fontSize: 40,
-              color: "white",
-
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "row" }}>
-              Revele sua&nbsp;
-              <Text pink>verdadeira</Text>
-            </div>
+          <span>
+          <Text>Revele sua&nbsp; <Text pink>verdadeira</Text></Text> 
+          </span>
+             
+             
+            
 
             <div>
               <Text pink>beleza e reconquiste</Text>
             </div>
-
-            <div style={{ display: "flex", flexDirection: "row" }}>
               <Text pink>sua autoestima&nbsp;</Text>
-              com
-            </div>
-
-            <div>Dexfit!</div>
-          </div>
+              <Text>com Dexfit!</Text>
+          
           <br />
           <Box
             sx={{
@@ -436,15 +413,12 @@ export default function Home() {
               marginBottom: 3,
             }}
           >
-            <div
-              style={{
-                backgroundColor: "rgba(239, 54, 147, 1)",
-                height: 16,
-                width: 16,
-                borderRadius: 100,
-                marginRight: 10,
-              }}
-            />
+           <Image
+            style={{ objectFit: "contain" }}
+            width={14}
+            height={14}
+            src="/circle.png"
+          />
 
             <Text
               style={{
@@ -473,15 +447,12 @@ export default function Home() {
               marginBottom: 3,
             }}
           >
-            <div
-              style={{
-                backgroundColor: "rgba(239, 54, 147, 1)",
-                height: 16,
-                width: 16,
-                borderRadius: 100,
-                marginRight: 10,
-              }}
-            />
+           <Image
+             style={{ objectFit: "contain", marginRight: 5 }}
+            width={14}
+            height={14}
+            src="/circle.png"
+          />
 
             <Text
               style={{
@@ -509,15 +480,12 @@ export default function Home() {
               marginBottom: 3,
             }}
           >
-            <div
-              style={{
-                backgroundColor: "rgba(239, 54, 147, 1)",
-                height: 16,
-                width: 16,
-                borderRadius: 100,
-                marginRight: 10,
-              }}
-            />
+           <Image
+            style={{ objectFit: "contain", marginRight: 5 }}
+            width={14}
+            height={14}
+            src="/circle.png"
+          />
 
             <Text
               style={{
@@ -541,7 +509,7 @@ export default function Home() {
           }}
         >
           <Image
-            style={{ objectFit: "contain" }}
+             style={{ objectFit: "contain", marginRight: 5 }}
             layout="responsive"
             width={800}
             height={675}

@@ -32,21 +32,18 @@ export const HighlightTextContainer = styled.div`
 `;
 
 export const Paragraph = styled(WhiteText)`
-  font-size: 24px;
   font-weight: 400;
 `;
 export const Button = styled.div`
   height: 78px;
-  width: 90%;
+  width: 100%;
   background-color: #ef3693;
   color: white;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: px;
-  padding-right: px;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
