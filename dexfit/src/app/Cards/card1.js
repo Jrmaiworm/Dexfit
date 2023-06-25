@@ -62,4 +62,4 @@ export default function Card1() {
       </Box>
     </Box>
   );
-};
+}
