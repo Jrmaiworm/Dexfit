@@ -1,4 +1,7 @@
 import styled from "styled-components";
+interface TextProps {
+  pink?: boolean;
+}
 
 export const Container = styled.div`
   height: 100vh;
@@ -19,9 +22,8 @@ export const TextContainer = styled.div``;
 export const WhiteText = styled.div`
   color: white;
 `;
-export const Text = styled.div`
-
-color: ${props => (props.pink ? '#ff0181' : 'white')};
+export const Text = styled.div<TextProps>`
+  color: ${props => (props.pink ? "#ef3693" : "white")};
 `;
 
 export const HighlightTextContainer = styled.div`
