@@ -36,14 +36,16 @@ export const Paragraph = styled(WhiteText)`
 `;
 export const Button = styled.div`
   height: 78px;
-  width: 100%;
+  width: 90%;
   background-color: #ef3693;
   color: white;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: px;
+  padding-right: px;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
