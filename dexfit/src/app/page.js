@@ -414,7 +414,7 @@ export default function Home() {
             }}
           >
            <Image
-            style={{ objectFit: "contain" }}
+          style={{ objectFit: "contain", marginRight: 5 }}
             width={14}
             height={14}
             src="/circle.png"
