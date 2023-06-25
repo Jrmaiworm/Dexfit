@@ -171,8 +171,9 @@ export default function Home() {
       >
         <Box
           sx={{
-            width: { xs: "100%", md: "50%" },
+            width: { xs: "100%", md: "40%" },
             padding: 5,
+           
           }}
         >
           <Image
@@ -185,7 +186,7 @@ export default function Home() {
         </Box>
         <Box
           sx={{
-            width: { xs: "100%", md: "50%" },
+            width: { xs: "100%", md: "60%" },
             padding: 5,
           }}
         >
@@ -397,7 +398,7 @@ export default function Home() {
       >
         <Box
           sx={{
-            width: { xs: "100%", md: "40%" },
+            width: { xs: "100%", md: "60%" },
             padding: 5,
           }}
         >
@@ -536,7 +537,10 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Box sx={{ flex: 1 }}>
+        <Box  sx={{
+            width: { xs: "100%", md: "40%" },
+            padding: 5,
+          }}>
           <Image
             style={{ objectFit: "contain" }}
             layout="responsive"
