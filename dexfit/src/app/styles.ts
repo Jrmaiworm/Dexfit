@@ -37,7 +37,7 @@ export const Paragraph = styled(WhiteText)`
 `;
 export const Button = styled.div`
   height: 78px;
-  width: 100%;
+  width: 90%;
   background-color: #ef3693;
   color: white;
   font-weight: 700;

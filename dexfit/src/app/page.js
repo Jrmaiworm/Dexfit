@@ -173,7 +173,6 @@ export default function Home() {
           sx={{
             width: { xs: "100%", md: "40%" },
             padding: 5,
-           
           }}
         >
           <Image
@@ -234,7 +233,7 @@ export default function Home() {
               }}
             >
               Transforme seu corpo&nbsp;
-              <div style={{ fontWeight: 700 }}>sem efeitos colaterais</div>
+              <strong>sem efeitos colaterais</strong>
             </Text>
           </Box>
 
@@ -269,8 +268,7 @@ export default function Home() {
               }}
             >
               Recupere sua&nbsp;
-              <div style={{ fontWeight: 700 }}>autoestima&nbsp;</div>e brilhe
-              como nunca
+              <strong>autoestima</strong> e brilhe como nunca
             </Text>
           </Box>
 
@@ -305,10 +303,8 @@ export default function Home() {
               }}
             >
               Prepare-se para&nbsp;
-              <div style={{ fontWeight: 700 }}>
-                reduzir os números do manequim&nbsp;
-              </div>
-              e arrasar com sua nova silhueta
+              <strong> reduzir os números do manequim&nbsp;</strong>e arrasar
+              com sua nova silhueta
             </Text>
           </Box>
 
@@ -343,7 +339,8 @@ export default function Home() {
               }}
             >
               Desfrute da&nbsp;
-              <div style={{ fontWeight: 700 }}>sensação de saciedade&nbsp;</div>
+             <strong>sensação de saciedade&nbsp;
+              </strong>
               duradoura e conquiste o controle sobre a sua alimentação
             </Text>
           </Box>
@@ -537,10 +534,12 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Box  sx={{
+        <Box
+          sx={{
             width: { xs: "100%", md: "40%" },
             padding: 5,
-          }}>
+          }}
+        >
           <Image
             style={{ objectFit: "contain" }}
             layout="responsive"
