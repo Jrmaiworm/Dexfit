@@ -20,7 +20,7 @@ export default function Home() {
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh",
-        // backgroundColor: "#1e1b2c",
+        backgroundColor: "#1e1b2c",
         color: "#ff0181",
         fontSize: 40,
         fontWeight: 700,
@@ -74,7 +74,7 @@ export default function Home() {
             layout="responsive"
             width={800}
             height={675}
-            src="/IMAGEM DE PRODUTO.png"
+            src="/IMAGEMPRODUTO.png"
           />
         </Box>
       </Box>
