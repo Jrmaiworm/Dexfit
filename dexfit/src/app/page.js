@@ -6,6 +6,7 @@ import {
   Button,
   HighlightTextContainer,
   Paragraph,
+  PinkText,
   Text,
   TextContainer,
 } from "./styles";
@@ -28,17 +29,17 @@ export default function Home() {
     >
       <Box
         sx={{
+          // boxShadow: '0 6px 80px -18px rgba(220,220,220, 0.81)',
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           width: "100%",
-          padding: { xs: 5, md: 0 },
+          padding: { xs: 5, md: 10 },
         }}
       >
         <Box
           sx={{
-            flex: 1,
-            width: { xs: "100%", md: "50%" },
+            width: { xs: "100%", md: "40%" },
             padding: 5,
           }}
         >
@@ -76,10 +77,12 @@ export default function Home() {
 
       <Box
         sx={{
+          width: "90%",
+          borderRadius: 3,
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           backgroundColor: "rgba(108, 93, 158, 0.19)",
-          alignItems:'center',
+          alignItems: "center",
           padding: 5,
           textAlign: "center",
           justifyContent: { xs: "center", md: "space-around" },
@@ -87,7 +90,7 @@ export default function Home() {
       >
         <Box
           sx={{
-            width: { xs: '90%', md: '20%'} ,
+            width: { xs: "90%", md: "20%" },
             fontWeight: 900,
             fontSize: 24,
           }}
@@ -99,7 +102,8 @@ export default function Home() {
             height={156}
             src="/CALORIA.png"
           />
-          Potencialize seu metabolismo
+          <PinkText>Potencialize seu metabolismo</PinkText>
+
           <Paragraph style={{ fontWeight: 400, fontSize: 20 }}>
             <br />
             Queime gordura de forma rápida e natural através do aumento do seu
@@ -109,7 +113,7 @@ export default function Home() {
 
         <Box
           sx={{
-            width: { xs: '90%', md: '20%'} ,
+            width: { xs: "90%", md: "20%" },
             fontWeight: 900,
             fontSize: 24,
           }}
@@ -121,7 +125,9 @@ export default function Home() {
             height={156}
             src="/MEDIDAS.png"
           />
+          <PinkText>
           Reduza medidas em tempo recorde!
+          </PinkText>
           <Paragraph style={{ fontWeight: 400, fontSize: 20 }}>
             <br />
             Veja resultados visíveis em pouco tempo e diga adeus às roupas plus
@@ -131,7 +137,7 @@ export default function Home() {
 
         <Box
           sx={{
-            width: { xs: '90%', md: '20%'} ,
+            width: { xs: "90%", md: "20%" },
             fontWeight: 900,
             fontSize: 24,
           }}
@@ -143,7 +149,9 @@ export default function Home() {
             height={156}
             src="/BELEZA.png"
           />
+          <PinkText>
           Desperte a beleza interior
+          </PinkText>
           <Paragraph style={{ fontWeight: 400, fontSize: 20 }}>
             <br />
             Tenha uma pele firme, radiante e saudável, cabelos deslumbrantes e
@@ -158,7 +166,7 @@ export default function Home() {
           flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           justifyContent: "center",
-          width:  "100%",
+          width: "100%",
           padding: { xs: 5, md: 0 },
         }}
       >
@@ -173,19 +181,22 @@ export default function Home() {
         </Box>
         <Box
           sx={{
-            width:  { xs: '100%', md: '50%' } ,
+            width: { xs: "100%", md: "50%" },
             padding: 5,
-           
           }}
         >
-          <Box   sx={{
-            width: '100%',
-            padding: 5, 
-            backgroundColor:'red'
-           
-          }}>
-            <Text>Sinta-se uma&nbsp;  <Text pink>MULHER</Text></Text>
-            <Text pink>COMPLETA&nbsp;  <Text>novamente!</Text></Text>
+          <Box
+            sx={{
+              width: "100%",
+              padding: 5,
+            }}
+          >
+            <Text>
+              Sinta-se uma&nbsp; <Text pink>MULHER</Text>
+            </Text>
+            <Text pink>
+              COMPLETA&nbsp; <Text>novamente!</Text>
+            </Text>
           </Box>
           <Box
             sx={{

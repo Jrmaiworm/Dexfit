@@ -11,7 +11,9 @@ export const Container = styled.div`
   align-items: center;
   width: 100vw;
 `;
-
+export const PinkText = styled.div`
+  color: #ef3693;
+`;
 export const TextContainer = styled.div``;
 
 export const WhiteText = styled.div`
@@ -43,6 +45,7 @@ export const Button = styled.div`
   justify-content: center;
   padding-left: px; 
   padding-right: px;
+  border-radius: 10px;
   cursor: pointer;
   text-align: center;
 
