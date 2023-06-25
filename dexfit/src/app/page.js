@@ -170,7 +170,11 @@ export default function Home() {
           padding: { xs: 5, md: 0 },
         }}
       >
-        <Box>
+        <Box  sx={{
+            width: { xs: "100%", md: "50%" },
+            padding: 5,
+          }}
+        >
           <Image
             style={{ objectFit: "contain" }}
             layout="responsive"
