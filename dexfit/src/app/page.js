@@ -20,11 +20,15 @@ export default function Home() {
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh",
-        backgroundColor: "#1e1b2c",
+        // backgroundColor: "#1e1b2c",
         color: "#ff0181",
         fontSize: 40,
         fontWeight: 700,
         alignItems: "center",
+        backgroundImage: 'url("/FUNDODEGRADE.png")',
+        backgroundSize: 'cover',
+        // backgroundPosition: 'center',
+
       }}
     >
       <Box
