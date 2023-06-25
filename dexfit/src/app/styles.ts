@@ -23,7 +23,7 @@ export const WhiteText = styled.div`
   color: white;
 `;
 export const Text = styled.div<TextProps>`
-  color: ${props => (props.pink ? "#ef3693" : "white")};
+  color: ${(props) => (props.pink ? "rgba(255, 1, 129, 1)" : "white")};
 `;
 
 export const HighlightTextContainer = styled.div`
@@ -45,7 +45,7 @@ export const Button = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: px; 
+  padding-left: px;
   padding-right: px;
   border-radius: 10px;
   cursor: pointer;

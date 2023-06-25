@@ -26,9 +26,8 @@ export default function Home() {
         fontWeight: 700,
         alignItems: "center",
         backgroundImage: 'url("/FUNDODEGRADE.png")',
-        backgroundSize: 'cover',
+        backgroundSize: "cover",
         // backgroundPosition: 'center',
-
       }}
     >
       <Box
@@ -129,9 +128,7 @@ export default function Home() {
             height={156}
             src="/MEDIDAS.png"
           />
-          <PinkText>
-          Reduza medidas em tempo recorde!
-          </PinkText>
+          <PinkText>Reduza medidas em tempo recorde!</PinkText>
           <Paragraph style={{ fontWeight: 400, fontSize: 20 }}>
             <br />
             Veja resultados visíveis em pouco tempo e diga adeus às roupas plus
@@ -153,9 +150,7 @@ export default function Home() {
             height={156}
             src="/BELEZA.png"
           />
-          <PinkText>
-          Desperte a beleza interior
-          </PinkText>
+          <PinkText>Desperte a beleza interior</PinkText>
           <Paragraph style={{ fontWeight: 400, fontSize: 20 }}>
             <br />
             Tenha uma pele firme, radiante e saudável, cabelos deslumbrantes e
@@ -174,7 +169,8 @@ export default function Home() {
           padding: { xs: 5, md: 0 },
         }}
       >
-        <Box  sx={{
+        <Box
+          sx={{
             width: { xs: "100%", md: "50%" },
             padding: 5,
           }}
@@ -386,6 +382,168 @@ export default function Home() {
           </Box>
 
           <Button>EU QUERO SER UMA MULHER COMPLETA</Button>
+        </Box>
+      </Box>
+
+      <Box
+        sx={{
+          // boxShadow: '0 6px 80px -18px rgba(220,220,220, 0.81)',
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          alignItems: "center",
+          width: "100%",
+          padding: { xs: 5, md: 10 },
+        }}
+      >
+        <Box
+          sx={{
+            width: { xs: "100%", md: "40%" },
+            padding: 5,
+          }}
+        >
+          <div
+            style={{
+              fontWeight: 900,
+              fontSize: 40,
+              color: "white",
+
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              Revele sua&nbsp;
+              <Text pink>verdadeira</Text>
+            </div>
+
+            <div>
+              <Text pink>beleza e reconquiste</Text>
+            </div>
+
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <Text pink>sua autoestima&nbsp;</Text>
+              com
+            </div>
+
+            <div>Dexfit!</div>
+          </div>
+          <br />
+          <Box
+            sx={{
+              fontWeight: 700,
+              fontSize: 20,
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              marginBottom: 3,
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "rgba(239, 54, 147, 1)",
+                height: 16,
+                width: 16,
+                borderRadius: 100,
+                marginRight: 10,
+              }}
+            />
+
+            <Text
+              style={{
+                fontWeight: 400,
+                fontSize: 20,
+                display: "flex",
+                flexDirection: "row",
+
+                display: "inline-block",
+              }}
+            >
+              <div style={{ fontWeight: 700 }}>
+                Você tem se esforçado para emagrecer, mas está enfrentando
+                dificuldades?
+              </div>
+            </Text>
+          </Box>
+
+          <Box
+            sx={{
+              fontWeight: 700,
+              fontSize: 20,
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              marginBottom: 3,
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "rgba(239, 54, 147, 1)",
+                height: 16,
+                width: 16,
+                borderRadius: 100,
+                marginRight: 10,
+              }}
+            />
+
+            <Text
+              style={{
+                fontWeight: 400,
+                fontSize: 20,
+                display: "flex",
+                flexDirection: "row",
+
+                display: "inline-block",
+              }}
+            >
+              <div style={{ fontWeight: 700 }}>
+                Ficou com gordura acumulada ao redor do umbigo?
+              </div>
+            </Text>
+          </Box>
+
+          <Box
+            sx={{
+              fontWeight: 700,
+              fontSize: 20,
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              marginBottom: 3,
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "rgba(239, 54, 147, 1)",
+                height: 16,
+                width: 16,
+                borderRadius: 100,
+                marginRight: 10,
+              }}
+            />
+
+            <Text
+              style={{
+                fontWeight: 400,
+                fontSize: 20,
+                display: "flex",
+                flexDirection: "row",
+
+                display: "inline-block",
+              }}
+            >
+              <div style={{ fontWeight: 700 }}>A barriga está flácida?</div>
+            </Text>
+          </Box>
+        </Box>
+
+        <Box sx={{ flex: 1 }}>
+          <Image
+            style={{ objectFit: "contain" }}
+            layout="responsive"
+            width={800}
+            height={675}
+            src="/Mask group.png"
+          />
         </Box>
       </Box>
     </Box>
