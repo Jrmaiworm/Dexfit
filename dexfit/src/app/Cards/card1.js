@@ -41,7 +41,7 @@ export default function Card1() {
             emagrecer
           </HighlightTextContainer>
           <br />
-          <Box sx={{ fontSize: { xs: 20, md: 30 }, color: "white" }}>
+          <Box sx={{ fontSize: { xs: 15, md: 25 }, color: "white" }}>
             Desperte a sua melhor versão com Dexfit! Esta cápsula exclusiva,
             desenvolvida especialmente para mulheres, apresenta uma fórmula 100%
             natural.

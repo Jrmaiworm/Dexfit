@@ -22,7 +22,7 @@ export const TextContainer = styled.div``;
 export const WhiteText = styled.div`
   color: white;
 `;
-export const Text = styled.div<TextProps>`
+export const Text = styled.text<TextProps>`
   color: ${(props) => (props.pink ? "rgba(255, 1, 129, 1)" : "white")};
 `;
 

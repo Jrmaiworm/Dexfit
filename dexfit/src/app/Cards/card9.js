@@ -11,13 +11,14 @@ export default function Card9() {
         alignItems: "center",
         justifyContent: "center",
         width: "100%",
-        padding: { xs: 5, md: 0 },
+        padding: { xs: 5, md: 5 },
       }}
     >
       <Box
         sx={{
           width: { xs: "100%", md: "40%" },
-          padding: 5,
+          padding: { xs: 0, md: 5 },
+      
         }}
       >
         <Image
@@ -31,32 +32,35 @@ export default function Card9() {
       <Box
         sx={{
           width: { xs: "100%", md: "60%" },
-          padding: 5,
+          padding: 15 ,
+        
         }}
       >
         <Box
           sx={{
             width: "100%",
-            padding: 5,
+            padding: 5 ,
+           alignItems:'center',
+           alignSelf:'center'
           }}
         >
-          <Text>
-            <Text pink>Recomendado</Text>
+          <Text >
+            <Text pink>Recomendado&nbsp;</Text>
             pelos maiores especialistas
           </Text>
         </Box>
         <Box>
           <Box
             sx={{
-              fontSize: { xs: 15, md: 20 },
+              fontSize: { xs: 15 , md: 20 },
               color: "white",
-              fontWeight: 400,
+              fontWeight: 700 ,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              padding: 5,
+              paddingBottom: 15,
             }}
-          ><Paragraph style={{ fontWeight: 400}}>
+          >
             Contamos com um amplo respaldo de inúmeros profissionais altamente
             respeitados em todo o território brasileiro, que não hesitam em
             recomendar como a solução ideal para tratar de forma eficaz os
@@ -64,7 +68,7 @@ export default function Card9() {
             experiência e conhecimento são reconhecidos, são unânimes em afirmar
             que os componentes extremamente precisos e de qualidade excepcional
             presentes nesse tratamento conferem resultados surpreendentes
-          </Paragraph>
+       
        
           </Box>
         </Box>

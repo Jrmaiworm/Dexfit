@@ -66,7 +66,7 @@ export default function Card2() {
         sx={{
           width: { xs: "90%", md: "20%" },
           fontWeight: 900,
-          fontSize: 24,
+         fontSize: 24
         }}
       >
         <Image

@@ -31,27 +31,27 @@ export default function Card3() {
       <Box
         sx={{
           width: { xs: "100%", md: "60%" },
-          padding: 5,
+       
         }}
       >
         <Box
           sx={{
             width: "100%",
-            padding: 5,
+            paddingBottom: 5,
           }}
         >
           <Text>
-            Sinta-se uma&nbsp; <Text pink>MULHER</Text>
+            Sinta-se uma&nbsp;MULHER
           </Text>
           <Text pink>
-            COMPLETA&nbsp; <Text>novamente!</Text>
+            COMPLETA&nbsp; novamente!
           </Text>
         </Box>
         <Box>
           <Box
             sx={{
               fontWeight: 700,
-              fontSize: 20,
+              fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
@@ -68,7 +68,7 @@ export default function Card3() {
             <Text
               style={{
                 fontWeight: 400,
-                fontSize: 20,
+                
                 display: "flex",
                 flexDirection: "row",
 
@@ -83,7 +83,7 @@ export default function Card3() {
           <Box
             sx={{
               fontWeight: 700,
-              fontSize: 20,
+              fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
@@ -100,7 +100,7 @@ export default function Card3() {
             <Text
               style={{
                 fontWeight: 400,
-                fontSize: 20,
+                fontSize: { xs: 15 , md: 20 },
                 display: "flex",
                 flexDirection: "row",
 
@@ -115,7 +115,7 @@ export default function Card3() {
           <Box
             sx={{
               fontWeight: 700,
-              fontSize: 20,
+              fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
@@ -132,7 +132,7 @@ export default function Card3() {
             <Text
               style={{
                 fontWeight: 400,
-                fontSize: 20,
+                fontSize: { xs: 15 , md: 20 },
                 display: "flex",
                 flexDirection: "row",
 
@@ -148,7 +148,7 @@ export default function Card3() {
           <Box
             sx={{
               fontWeight: 700,
-              fontSize: 20,
+              fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
@@ -165,7 +165,7 @@ export default function Card3() {
             <Text
               style={{
                 fontWeight: 400,
-                fontSize: 20,
+                fontSize: { xs: 15 , md: 20 },
                 display: "flex",
                 flexDirection: "row",
 
@@ -181,7 +181,7 @@ export default function Card3() {
           <Box
             sx={{
               fontWeight: 700,
-              fontSize: 20,
+              fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
@@ -198,10 +198,10 @@ export default function Card3() {
             <Text
               style={{
                 fontWeight: 400,
-                fontSize: 20,
+                fontSize: { xs: 15 , md: 20 },
                 display: "flex",
                 flexDirection: "row",
-
+                paddingBottom:15,
                 display: "inline-block",
               }}
             >

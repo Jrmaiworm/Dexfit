@@ -10,6 +10,7 @@ export default function Card5() {
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
+        justifyContent:'center',
         width: "100%",
         padding: { xs: 5, md: 10 },
       }}
@@ -17,16 +18,12 @@ export default function Card5() {
       <Box
         sx={{
           width: { xs: "100%", md: "60%" },
-          padding: 5,
-          fontSize: { xs: 30, md: 40 },
+          padding: 15,
         }}
       >
-        <span>
           <Text>
-            Revele sua&nbsp; <Text pink>verdadeira</Text>
+            Revele sua&nbsp;verdadeira
           </Text>
-        </span>
-
         <div>
           <Text pink>beleza e reconquiste</Text>
         </div>
@@ -37,10 +34,11 @@ export default function Card5() {
         <Box
           sx={{
             fontWeight: 700,
-            fontSize: 20,
+            fontSize: { xs: 15 , md: 20 },
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
+            paddingTop: 10,
             marginBottom: 3,
           }}
         >
@@ -54,7 +52,7 @@ export default function Card5() {
           <Text
             style={{
               fontWeight: 400,
-              fontSize: 20,
+            fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
 
@@ -71,7 +69,7 @@ export default function Card5() {
         <Box
           sx={{
             fontWeight: 700,
-            fontSize: 20,
+          fontSize: { xs: 15 , md: 20 },
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -88,7 +86,7 @@ export default function Card5() {
           <Text
             style={{
               fontWeight: 400,
-              fontSize: 20,
+            fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
 
@@ -104,7 +102,7 @@ export default function Card5() {
         <Box
           sx={{
             fontWeight: 700,
-            fontSize: 20,
+          fontSize: { xs: 15 , md: 20 },
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -121,7 +119,7 @@ export default function Card5() {
           <Text
             style={{
               fontWeight: 400,
-              fontSize: 20,
+            fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
 
