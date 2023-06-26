@@ -57,7 +57,7 @@ export default function Card1() {
           layout="responsive"
           width={600}
           height={475}
-          src="/IMAGEMPRODUTO.png"
+          src="/IMAGEMPRODUT.png"
         />
       </Box>
     </Box>
