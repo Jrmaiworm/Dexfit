@@ -56,7 +56,7 @@ export default function Card9() {
               justifyContent: "center",
               padding: 5,
             }}
-          >
+          ><Text>
             Contamos com um amplo respaldo de inúmeros profissionais altamente
             respeitados em todo o território brasileiro, que não hesitam em
             recomendar como a solução ideal para tratar de forma eficaz os
@@ -64,6 +64,8 @@ export default function Card9() {
             experiência e conhecimento são reconhecidos, são unânimes em afirmar
             que os componentes extremamente precisos e de qualidade excepcional
             presentes nesse tratamento conferem resultados surpreendentes
+          </Text>
+       
           </Box>
         </Box>
 
