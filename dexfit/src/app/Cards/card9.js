@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
-import { Button, Text } from "../styles";
+import { Button, Paragraph, Text } from "../styles";
 
 export default function Card9() {
   return (
@@ -56,7 +56,7 @@ export default function Card9() {
               justifyContent: "center",
               padding: 5,
             }}
-          ><Text>
+          ><Paragraph style={{ fontWeight: 400}}>
             Contamos com um amplo respaldo de inúmeros profissionais altamente
             respeitados em todo o território brasileiro, que não hesitam em
             recomendar como a solução ideal para tratar de forma eficaz os
@@ -64,7 +64,8 @@ export default function Card9() {
             experiência e conhecimento são reconhecidos, são unânimes em afirmar
             que os componentes extremamente precisos e de qualidade excepcional
             presentes nesse tratamento conferem resultados surpreendentes
-          </Text>
+          </Paragraph
+        >
        
           </Box>
         </Box>
