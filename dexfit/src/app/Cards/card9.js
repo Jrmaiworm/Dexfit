@@ -64,8 +64,7 @@ export default function Card9() {
             experiência e conhecimento são reconhecidos, são unânimes em afirmar
             que os componentes extremamente precisos e de qualidade excepcional
             presentes nesse tratamento conferem resultados surpreendentes
-          </Paragraph
-        >
+          </Paragraph>
        
           </Box>
         </Box>
