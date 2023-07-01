@@ -34,6 +34,15 @@ export const HighlightTextContainer = styled.div`
 export const Paragraph = styled(WhiteText)`
   font-weight: 400;
 `;
+export const TextCard = styled(WhiteText)`
+  font-weight: 300;
+  font-size: 15px;
+`;
+export const Title = styled(WhiteText)`
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 5px;
+`;
 export const Button = styled.div`
   height: 78px;
   width: 90%;

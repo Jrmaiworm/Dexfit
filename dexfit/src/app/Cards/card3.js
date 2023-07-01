@@ -41,7 +41,7 @@ export default function Card3() {
           }}
         >
           <Text>
-            Sinta-se uma&nbsp;MULHER
+            Sinta-se uma MULHER&nbsp;
           </Text>
           <Text pink>
             COMPLETA&nbsp; novamente!
@@ -108,7 +108,7 @@ export default function Card3() {
               }}
             >
               Recupere sua&nbsp;
-              <strong>autoestima</strong> e brilhe como nunca
+              <strong>auto estima</strong> e brilhe como nunca
             </Text>
           </Box>
 

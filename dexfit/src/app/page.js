@@ -13,6 +13,7 @@ import {
 import Card1 from "../app/Cards/card1";
 import Card2 from "./Cards/card2";
 import Card3 from "./Cards/card3";
+import Card4 from "./Cards/card4";
 import Card5 from "./Cards/card5";
 import Card9 from "./Cards/card9";
 
@@ -42,7 +43,7 @@ export default function Home() {
 
       <Card3 />
 
-      {/* <Card4 /> */}
+      <Card4 />
 
       <Card5 />
 
