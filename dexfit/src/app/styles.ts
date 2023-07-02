@@ -67,6 +67,15 @@ export const PinkSubText = styled.div`
   justify-content:center;
   padding: 5px;
 `;
+export const PText = styled.div`
+  color: #ff0181;
+  display: flex;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 2px;
+
+  
+`;
 export const CardText = styled.div`
   color: white;
   display: flex;
