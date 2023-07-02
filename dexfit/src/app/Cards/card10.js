@@ -18,13 +18,13 @@ export default function Card10() {
       <Box
         sx={{
           width: { xs: "100%", md: "70%" },
-          padding: 15 ,
+          padding: { xs: 0 , md: 15 } ,
         
         }}
       >
         <Box
           sx={{
-            width: "100%",
+            width: { xs: "100%", md: "70%" },
             paddingBottom: 5 ,
            alignItems:'center',
            alignSelf:'center'

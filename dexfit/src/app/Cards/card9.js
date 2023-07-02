@@ -32,14 +32,14 @@ export default function Card9() {
       <Box
         sx={{
           width: { xs: "100%", md: "60%" },
-          padding: 15 ,
+          paddingBottom: 15,
         
         }}
       >
         <Box
           sx={{
             width: "100%",
-            padding: 5 ,
+            paddingBottom:5,
            alignItems:'center',
            alignSelf:'center'
           }}
