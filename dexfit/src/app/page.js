@@ -16,6 +16,8 @@ import Card3 from "./Cards/card3";
 import Card4 from "./Cards/card4";
 import Card5 from "./Cards/card5";
 import Card9 from "./Cards/card9";
+import Card10 from "./Cards/card10";
+import Card6 from "./Cards/card6";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -47,7 +49,7 @@ export default function Home() {
 
       <Card5 />
 
-      {/* <Card6 /> */}
+      <Card6 />
 
       {/* <Card7 /> */}
 
@@ -55,7 +57,7 @@ export default function Home() {
 
       <Card9 />
 
-      {/* <Card10 /> */}
+      <Card10 />
     </Box>
   );
 }
