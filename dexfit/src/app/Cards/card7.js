@@ -64,6 +64,7 @@ export default function Card7() {
                 height: 100,
                 borderRadius: "50%",
                 backgroundColor: "white",
+             
               }}
             >
               <Image
@@ -97,7 +98,6 @@ export default function Card7() {
       sx={{
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
-
         justifyContent: "space-around",
         width: "100%",
         padding: { xs: 5, md: 5 },
@@ -131,6 +131,7 @@ export default function Card7() {
             paddingBottom: 5,
             alignItems: "center",
             alignSelf: "center",
+            marginTop:10,
           }}
         >
           <Text>Nossa composição</Text>

@@ -1,15 +1,6 @@
 "use client";
 import { Box } from "@mui/material";
 import { Montserrat } from "next/font/google";
-import Image from "next/image";
-import {
-  Button,
-  HighlightTextContainer,
-  Paragraph,
-  PinkText,
-  Text,
-  TextContainer,
-} from "./styles";
 import Card1 from "../app/Cards/card1";
 import Card2 from "./Cards/card2";
 import Card3 from "./Cards/card3";

@@ -89,7 +89,7 @@ export default function Card4() {
         >
           <Image
             style={{ objectFit: "contain", margin: 15 }}
-            layout="responsive"
+        
             width={175}
             height={175}
             src="/Brasil.png"
@@ -131,7 +131,6 @@ export default function Card4() {
           </Box>
           <Image
             style={{ objectFit: "contain", margin: 15 }}
-            layout="responsive"
             width={175}
             height={175}
             src="/emagresse.png"
