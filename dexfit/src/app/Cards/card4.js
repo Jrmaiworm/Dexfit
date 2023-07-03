@@ -30,7 +30,7 @@ export default function Card4() {
             <Box
                 sx={{
                     width: { xs: "100%", md: "40%" },
-                    padding: 5,
+                    padding: { xs: 0, md: 5 },
                 }}
             >
                 <TextContainer>
@@ -50,7 +50,10 @@ export default function Card4() {
                         Leia esses relatos e seja motivado a começar sua própria jornada de transformação rumo a uma vida mais saudável e confiante com o DexFit!
                     </Box>
                     <br />
+                    <br />
                     <Button>EU QUERO MUDAR</Button>
+                    <br />
+                    <br />
                 </TextContainer>
             </Box>
 
@@ -61,7 +64,7 @@ export default function Card4() {
                     flexDirection: "column",
                     alignItems: "center",
                     width: { xs: "100%", md: "60%" },
-                    padding: { xs: 5, md: 10 },
+                    padding: { xs: 0, md: 10 },
 
                 }}
             >

@@ -11,7 +11,7 @@ export default function Card3() {
         alignItems: "center",
         justifyContent: "center",
         width: "100%",
-        padding: { xs: 5, md: 0 },
+        padding: { xs: 5, md: 10 },
       }}
     >
       <Box
