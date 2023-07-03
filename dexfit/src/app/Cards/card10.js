@@ -17,7 +17,7 @@ export default function Card10() {
       
       <Box
         sx={{
-          width: { xs: "100%", md: "70%" },
+          width: { xs: "100%", md: "60%" },
           padding: { xs: 0 , md: 15 } ,
         
         }}
@@ -61,13 +61,13 @@ export default function Card10() {
       </Box>
       <Box
         sx={{
-          width: { xs: "100%", md: "30%" },
+          width: { xs: "100%", md: "40%" },
           padding: { xs: 0, md: 5 },
       
         }}
       >
         <Image
-          style={{ objectFit: "contain" }}
+          style={{ objectFit: "contain",padding:25 }}
           layout="responsive"
           width={225}
           height={279}

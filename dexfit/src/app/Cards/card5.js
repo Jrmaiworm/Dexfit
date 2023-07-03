@@ -18,7 +18,7 @@ export default function Card5() {
       <Box
         sx={{
           width: { xs: "100%", md: "60%" },
-          padding: 15,
+          padding: { xs: 0, md: 15 },
         }}
       >
           <Text>
