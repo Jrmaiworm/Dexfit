@@ -51,7 +51,7 @@ export default function Card1() {
         </TextContainer>
       </Box>
 
-      <Box sx={{ flex: 1 , width: { xs: "100%", md: "40%" } }}>
+      <Box sx={{ flex: 1, width: { xs: "100%", md: "40%" } }}>
         <Image
           style={{ objectFit: "contain" }}
           layout="responsive"

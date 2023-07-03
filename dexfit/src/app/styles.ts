@@ -34,9 +34,8 @@ export const BlackText = styled.div`
   font-weight: 700;
   font-size: 18px;
   align-self: center;
-  justify-content:center;
-  padding-bottom: 25px ;
-
+  justify-content: center;
+  padding-bottom: 25px;
 `;
 export const BlackSubText = styled.div`
   color: black;
@@ -44,10 +43,8 @@ export const BlackSubText = styled.div`
   font-weight: 700;
   font-size: 12px;
   align-self: center;
-  justify-content:center;
+  justify-content: center;
   padding: 15px 0px 15px;
-
-
 `;
 export const WhiteSubText = styled.div`
   color: white;
@@ -55,16 +52,16 @@ export const WhiteSubText = styled.div`
   font-weight: 700;
   font-size: 12px;
   align-self: center;
-  justify-content:center;
+  justify-content: center;
   padding: 15px 0px 15px;
 `;
 export const PinkSubText = styled.div`
-    color: #ff0181;
+  color: #ff0181;
   display: flex;
   font-weight: 700;
   font-size: 12px;
   align-self: center;
-  justify-content:center;
+  justify-content: center;
   padding: 5px;
 `;
 export const PText = styled.div`
@@ -73,8 +70,6 @@ export const PText = styled.div`
   font-weight: 700;
   font-size: 15px;
   margin-bottom: 2px;
-
-  
 `;
 export const CardText = styled.div`
   color: white;
@@ -82,9 +77,8 @@ export const CardText = styled.div`
   font-weight: 700;
   font-size: 18px;
   align-self: center;
-  justify-content:center;
+  justify-content: center;
   padding: 25px 15px 15px;
-
 `;
 export const Text = styled.text<TextProps>`
   color: ${(props) => (props.pink ? "rgba(255, 1, 129, 1)" : "white")};
@@ -109,23 +103,26 @@ export const Title = styled.text<TitleProps>`
   color: ${(props) => (props.black ? "black" : "white")};
 `;
 
-export const Button =styled.div<ButtonProps> `
+export const Button = styled.a.attrs({
+  href: "https://wa.me/47999847270",
+  target: "_blank",
+})<ButtonProps>`
   height: 78px;
   width: 90%;
-  background-color:${(props) => (props.white ? "white" : "rgba(255, 1, 129, 1)")};
-  color: ${(props) => (props.white ? "rgba(255, 1, 129, 1)":"white" )};
+  background-color: ${(props) =>
+    props.white ? "white" : "rgba(255, 1, 129, 1)"};
+  color: ${(props) => (props.white ? "rgba(255, 1, 129, 1)" : "white")};
   font-weight: 700;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 4px 15px  rgba(255, 1, 128, 1);
+  box-shadow: 0px 4px 15px rgba(255, 1, 128, 1);
   padding-left: px;
   padding-right: px;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
-
 
   &:hover {
     background-color: #f687b3;

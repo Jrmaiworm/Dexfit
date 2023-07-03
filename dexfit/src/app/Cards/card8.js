@@ -60,14 +60,13 @@ export default function Card8() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            margin: 3,
             borderRadius: 2,
             padding: { xs: 5, md: 5 },
           }}
         >
           <Image
             style={{ objectFit: "contain", marginBottom: 20 }}
-            layout = "responsive"
+            layout="responsive"
             width={600}
             height={475}
             src="/capricho.png"
@@ -85,7 +84,6 @@ export default function Card8() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            margin: 3,
             borderRadius: 2,
             padding: { xs: 5, md: 5 },
           }}
@@ -95,7 +93,7 @@ export default function Card8() {
             layout="responsive"
             width={600}
             height={475}
-            src= "/livre.png"
+            src="/livre.png"
           />
           <TextCard>
             "(A Quitosana) é natural e tem se tornado referência para uma série
@@ -109,7 +107,6 @@ export default function Card8() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            margin: 3,
             borderRadius: 2,
             padding: { xs: 5, md: 5 },
           }}
