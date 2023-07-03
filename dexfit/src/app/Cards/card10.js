@@ -63,14 +63,17 @@ export default function Card10() {
         sx={{
           width: { xs: "100%", md: "40%" },
           padding: { xs: 0, md: 5 },
+          displey:'flex',
+          justifyContent:'center',
+          alignItems:'center'
       
         }}
       >
         <Image
-          style={{ objectFit: "contain",padding:25 }}
+          style={{ objectFit: "contain",padding:25 ,  }}
           layout="responsive"
           width={225}
-          height={279}
+          height={225}
           src="/garantia.png"
         />
       </Box>

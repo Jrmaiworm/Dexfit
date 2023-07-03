@@ -29,7 +29,7 @@ export default function Card6() {
                 alignItems: "center",
                 justifyContent: 'center',
                 width: "100%",
-                padding: { xs: 5, md: 10 },
+                padding: { xs: 1, md: 5 },
             }}
         >
             <Box

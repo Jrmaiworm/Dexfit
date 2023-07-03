@@ -2,20 +2,9 @@ import { Box } from "@mui/material";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import {
-  BlackSubText,
-  BlackText,
-  Button,
-  CardText,
-  HighlightTextContainer,
-  Paragraph,
-  PinkSubText,
-  PinkText,
   Text,
   TextCard,
-  TextContainer,
-  Title,
-  WhiteSubText,
-  WhiteText,
+
 } from "../styles";
 import theme from "../theme";
 
@@ -40,7 +29,8 @@ export default function Card8() {
       <Box
         sx={{
           width: "100%",
-          padding: 5,
+          padding: { xs: 0, md: 5 },
+          marginBottom:5
         }}
       >
         <Text>
@@ -61,7 +51,8 @@ export default function Card8() {
             flexDirection: "column",
             justifyContent: "center",
             borderRadius: 2,
-            padding: { xs: 5, md: 5 },
+            padding: { xs: 0, md: 5 },
+            marginBottom:5
           }}
         >
           <Image
@@ -85,7 +76,8 @@ export default function Card8() {
             flexDirection: "column",
             justifyContent: "center",
             borderRadius: 2,
-            padding: { xs: 5, md: 5 },
+            padding: { xs: 0, md: 5 },
+            marginBottom:5
           }}
         >
           <Image
@@ -108,7 +100,8 @@ export default function Card8() {
             flexDirection: "column",
             justifyContent: "center",
             borderRadius: 2,
-            padding: { xs: 5, md: 5 },
+            padding: { xs: 0, md: 5 },
+            marginBottom:5
           }}
         >
           <Image

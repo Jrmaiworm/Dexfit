@@ -52,10 +52,9 @@ export default function Card5() {
           <Text
             style={{
               fontWeight: 400,
-            fontSize: { xs: 15 , md: 20 },
+              fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
-
               display: "inline-block",
             }}
           >
@@ -69,7 +68,7 @@ export default function Card5() {
         <Box
           sx={{
             fontWeight: 700,
-          fontSize: { xs: 15 , md: 20 },
+            fontSize: { xs: 15 , md: 20 },
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -86,7 +85,7 @@ export default function Card5() {
           <Text
             style={{
               fontWeight: 400,
-            fontSize: { xs: 15 , md: 20 },
+             fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
 
@@ -118,7 +117,7 @@ export default function Card5() {
 
           <Text
             style={{
-              fontWeight: 400,
+            fontWeight: 400,
             fontSize: { xs: 15 , md: 20 },
               display: "flex",
               flexDirection: "row",
@@ -134,7 +133,7 @@ export default function Card5() {
       <Box
         sx={{
           width: { xs: "100%", md: "40%" },
-          padding: 5,
+          paddingTop: { xs: 5 , md: 5 },
         }}
       >
         <Image
