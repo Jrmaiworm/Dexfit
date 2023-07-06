@@ -21,7 +21,8 @@ export default function Card1() {
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
         width: "100%",
-        padding: { xs: 5, md: 10 },
+        justifyContent:'center',
+        padding: { xs: 0, md: 10 },
       }}
     >
       <Box
@@ -49,6 +50,7 @@ export default function Card1() {
           <br />
           <Button>EU QUERO EMAGRECER</Button>
         </TextContainer>
+ 
       </Box>
 
       <Box sx={{ flex: 1, width: { xs: "100%", md: "40%" } }}>

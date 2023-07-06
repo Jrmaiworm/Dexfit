@@ -103,15 +103,16 @@ export default function Card7() {
     >
       <Box
         sx={{
-          width: { xs: "100%", md: "60%" },
-          padding: { xs: 0, md: 5 },
+          width: { xs: "100%", md: "50%" },
+          padding: { xs: 0, md: 10},
+          justifyContent: "center",
         }}
       >
         <Image
           style={{ objectFit: "contain", marginBottom: 80 }}
           layout="responsive"
-          width={525}
-          height={579}
+          width={100}
+          height={100}
           src="/3unidades.png"
         />
         <Button>EU QUERO SER EMAGRECER</Button>

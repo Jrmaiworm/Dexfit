@@ -27,7 +27,7 @@ export default function Card6() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "space-between",
         width: "100%",
         padding: { xs: 1, md: 5 },
       }}
@@ -40,7 +40,7 @@ export default function Card6() {
       >
         <Text>
           Chegou o <Text pink>de você retomar o controle,</Text>
-          <Text> recuperar o corpo e elevar sua autoestima ao máximo!</Text>
+          <Text> recuperar o corpo e elevar sua auto estima ao máximo!</Text>
         </Text>
       </Box>
       <Box
@@ -48,8 +48,11 @@ export default function Card6() {
           display: "flex",
           width: "100%",
           flexDirection: { xs: "column", md: "row" },
+          alignItems: "center",
+          justifyContent: "space-between",
         }}
       >
+    {/* //card */}
         <Box
           sx={{
             display: "flex",
@@ -66,10 +69,9 @@ export default function Card6() {
           </BlackText>
           <Image
             style={{ objectFit: "contain" }}
-            layout="responsive"
-            width={600}
-            height={475}
-            src="/3unidades.png"
+            width={350}
+            height={255}
+            src="/5unidades.png"
           />
           <BlackSubText style={{ fontSize: 16, fontWeight: "700" }}>
             De R$ 687,00 por apenas:
@@ -86,6 +88,8 @@ export default function Card6() {
           <br />
           <Button>Eu Quero</Button>
         </Box>
+
+            {/* //card */}
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div
             style={{
@@ -111,12 +115,11 @@ export default function Card6() {
               boxShadow: "0px 4px 15px  rgba(255, 1, 129, 1)",
             }}
           >
-            <CardText>Kit 3 unidades</CardText>
+            <CardText style={{ fontWeight: "700", fontSize: 24 }}>Kit 3 unidades</CardText>
             <Image
               style={{ objectFit: "contain" }}
-              layout="responsive"
-              width={600}
-              height={475}
+              width={350}
+              height={255}
               src="/3unidades.png"
             />
             <WhiteSubText style={{ fontSize: 16, fontWeight: "700" }}>
@@ -134,6 +137,8 @@ export default function Card6() {
             <Button white>Eu Quero</Button>
           </Box>
         </div>
+
+            {/* //card */}
         <Box
           sx={{
             display: "flex",
@@ -145,13 +150,13 @@ export default function Card6() {
             padding: { xs: 5, md: 10 },
           }}
         >
-          <BlackText>Kit 1 unidade</BlackText>
+          <BlackText style={{ fontWeight: "700", fontSize: 24 }}>Kit 1 unidade</BlackText>
           <Image
             style={{ objectFit: "contain" }}
-            layout="responsive"
-            width={600}
-            height={475}
-            src="/3unidades.png"
+        
+            width={350}
+            height={255}
+            src="/1unidade.png"
           />
           {/* //trocar a foto 1 unidade */}
           <BlackSubText style={{ fontSize: 16, fontWeight: "700" }}>
