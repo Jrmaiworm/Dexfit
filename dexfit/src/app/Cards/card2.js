@@ -12,16 +12,17 @@ export default function Card2() {
         flexDirection: { xs: "column", md: "row" },
         backgroundColor: "rgba(108, 93, 158, 0.19)",
         alignItems: "center",
-        padding: 5,
+        padding: { xs: 0, md: 5},
         textAlign: "center",
         justifyContent: { xs: "center", md: "space-around" },
       }}
     >
       <Box
         sx={{
-          width: { xs: "70%", md: "20%" },
+          width: { xs: "50%", md: "20%" },
           fontWeight: 900,
-          fontSize: 24,
+          fontSize: { xs: 18, md: 24},
+          margin:5,
         }}
       >
         <Image
@@ -42,9 +43,10 @@ export default function Card2() {
 
       <Box
         sx={{
-          width: { xs: "90%", md: "20%" },
+          width: { xs: "50%", md: "20%" },
           fontWeight: 900,
           fontSize: 24,
+          margin:5,
         }}
       >
         <Image
@@ -64,9 +66,10 @@ export default function Card2() {
 
       <Box
         sx={{
-          width: { xs: "90%", md: "20%" },
+          width: { xs: "50%", md: "20%" },
           fontWeight: 900,
-         fontSize: 24
+         fontSize: 24,
+         margin:5,
         }}
       >
         <Image

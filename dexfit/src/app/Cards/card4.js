@@ -75,6 +75,7 @@ export default function Card4() {
           alignItems: "center",
           width: { xs: "100%", md: "60%" },
           padding: { xs: 0, md: 10 },
+          
         }}
       >
         <Box
@@ -85,11 +86,11 @@ export default function Card4() {
             backgroundColor: theme.colors.secondary,
             borderRadius: 2,
             color: "white",
+            boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
           }}
         >
           <Image
-            style={{ objectFit: "contain", margin: 15 }}
-        
+            style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
             width={175}
             height={175}
             src="/Brasil.png"
@@ -116,6 +117,7 @@ export default function Card4() {
             borderRadius: 2,
             color: "white",
             marginTop: 10,
+            boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -130,7 +132,7 @@ export default function Card4() {
             </TextCard>{" "}
           </Box>
           <Image
-            style={{ objectFit: "contain", margin: 15 }}
+            style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
             width={175}
             height={175}
             src="/emagresse.png"

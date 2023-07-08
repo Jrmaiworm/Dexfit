@@ -29,7 +29,7 @@ export default function Card8() {
       <Box
         sx={{
           width: "100%",
-          padding: { xs: 0, md: 5 },
+          padding: {xs: 2, md: 5 },
           marginBottom:5
         }}
       >
@@ -51,7 +51,7 @@ export default function Card8() {
             flexDirection: "column",
             justifyContent: "center",
             borderRadius: 2,
-            padding: { xs: 0, md: 5 },
+            padding: {xs: 2, md: 5 },
             marginBottom:5
           }}
         >
@@ -76,7 +76,7 @@ export default function Card8() {
             flexDirection: "column",
             justifyContent: "center",
             borderRadius: 2,
-            padding: { xs: 0, md: 5 },
+            padding: {xs: 2, md: 5 },
             marginBottom:5
           }}
         >
@@ -100,7 +100,7 @@ export default function Card8() {
             flexDirection: "column",
             justifyContent: "center",
             borderRadius: 2,
-            padding: { xs: 0, md: 5 },
+            padding: {xs: 2, md: 5 },
             marginBottom:5
           }}
         >
