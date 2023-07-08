@@ -27,6 +27,7 @@ export default function Home() {
         fontSize: { xs: 20, md: 40 },
         fontWeight: 700,
         alignItems: "center",
+        justifyContent:'center',
         backgroundImage: 'url("/FUNDODEGRADE.png")',
         backgroundSize: "cover",
         // backgroundPosition: 'center',

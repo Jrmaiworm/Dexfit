@@ -56,13 +56,13 @@ export default function Card10() {
        
           </Box>
         </Box>
-
+        
         <Button>EU QUERO SER UMA MULHER COMPLETA</Button>
       </Box>
       <Box
         sx={{
           width: { xs: "100%", md: "40%" },
-          padding: { xs: 0, md: 5 },
+          padding: { xs: 5, md: 5 },
           displey:'flex',
           justifyContent:'center',
           alignItems:'center'

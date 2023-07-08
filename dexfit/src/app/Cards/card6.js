@@ -25,10 +25,9 @@ export default function Card6() {
       sx={{
         // boxShadow: '0 6px 80px -18px rgba(220,220,220, 0.81)',
         display: "flex",
-        overflow: "auto",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "center",
         width: "100%",
         padding: { xs: 1, md: 5 },
       }}
@@ -36,12 +35,12 @@ export default function Card6() {
       <Box
         sx={{
           width: "100%",
-          padding: 5,
+          padding: 6,
         }}
       >
         <Text>
           Chegou o <Text pink>de você retomar o controle,</Text>
-          <Text> recuperar o corpo e elevar sua auto estima ao máximo!</Text>
+          <Text> recuperar o corpo e elevar sua autoestima ao máximo!</Text>
         </Text>
       </Box>
       <Box
@@ -49,20 +48,17 @@ export default function Card6() {
           display: "flex",
           width: "100%",
           flexDirection: { xs: "column", md: "row" },
-          alignItems: "center",
-          justifyContent: "space-between",
         }}
       >
-        {/* //card */}
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             backgroundColor: "white",
-            margin: 3,
+            margin: 2,
             borderRadius: 2,
-            padding: { xs: 5, md: 10 },
+            padding: { xs: 2, md: 5 },
           }}
         >
           <BlackText style={{ fontWeight: "700", fontSize: 24 }}>
@@ -70,9 +66,10 @@ export default function Card6() {
           </BlackText>
           <Image
             style={{ objectFit: "contain" }}
-            width={350}
-            height={255}
-            src="/5unidades.png"
+            layout="responsive"
+            width={600}
+            height={475}
+            src="/3unidades.png"
           />
           <BlackSubText style={{ fontSize: 16, fontWeight: "700" }}>
             De R$ 687,00 por apenas:
@@ -89,8 +86,6 @@ export default function Card6() {
           <br />
           <Button>Eu Quero</Button>
         </Box>
-
-        {/* //card */}
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div
             style={{
@@ -116,13 +111,12 @@ export default function Card6() {
               boxShadow: "0px 4px 15px  rgba(255, 1, 129, 1)",
             }}
           >
-            <CardText style={{ fontWeight: "700", fontSize: 24 }}>
-              Kit 3 unidades
-            </CardText>
+            <CardText style={{ fontWeight: "700", fontSize: 24 }}>Kit 3 unidades</CardText>
             <Image
               style={{ objectFit: "contain" }}
-              width={350}
-              height={255}
+              layout="responsive"
+              width={600}
+              height={475}
               src="/3unidades.png"
             />
             <WhiteSubText style={{ fontSize: 16, fontWeight: "700" }}>
@@ -140,27 +134,24 @@ export default function Card6() {
             <Button white>Eu Quero</Button>
           </Box>
         </div>
-
-        {/* //card */}
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             backgroundColor: "white",
-            margin: 3,
+            margin: 2,
             borderRadius: 2,
-            padding: { xs: 5, md: 10 },
+            padding: { xs: 2, md: 5 },
           }}
         >
-          <BlackText style={{ fontWeight: "700", fontSize: 24 }}>
-            Kit 1 unidade
-          </BlackText>
+          <BlackText style={{ fontWeight: "700", fontSize: 24 }}>Kit 1 unidade</BlackText>
           <Image
             style={{ objectFit: "contain" }}
-            width={350}
-            height={255}
-            src="/1unidade.png"
+            layout="responsive"
+            width={600}
+            height={475}
+            src="/3unidades.png"
           />
           {/* //trocar a foto 1 unidade */}
           <BlackSubText style={{ fontSize: 16, fontWeight: "700" }}>

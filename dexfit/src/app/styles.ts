@@ -113,7 +113,7 @@ export const Button = styled.a.attrs({
     props.white ? "white" : "rgba(255, 1, 129, 1)"};
   color: ${(props) => (props.white ? "rgba(255, 1, 129, 1)" : "white")};
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
