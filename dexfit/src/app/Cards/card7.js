@@ -115,7 +115,7 @@ export default function Card7() {
           height={100}
           src="/3unidades.png"
         />
-        <Button>EU QUERO SER EMAGRECER</Button>
+        <Button>EU QUERO EMAGRECER</Button>
         <br />
       </Box>
       <Box

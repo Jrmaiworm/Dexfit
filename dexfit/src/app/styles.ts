@@ -118,14 +118,22 @@ export const Button = styled.a.attrs({
   align-items: center;
   align-self: center;
   justify-content: center;
-  box-shadow: 0px 4px 15px rgba(255, 1, 128, 1);
+  box-shadow: ${(props) =>
+    props.white
+      ? "0px 4px 10px rgba(255, 255, 255, 1)"
+      : "0px 4px 10px rgba(255, 1, 129, 1)"};
 
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
 
   &:hover {
-    background-color: #f687b3;
-    color: #000;
+    background-color: ${(props) => (props.white ? "#f687b3" : "#000")};
+    color: ${(props) => (props.white ? "#000" : "white")};
+  }
+
+  @media (max-width: 768px) {
+    height: 60px;
+    font-size: 16px;
   }
 `;
