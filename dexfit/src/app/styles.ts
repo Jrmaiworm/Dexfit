@@ -108,7 +108,7 @@ export const Button = styled.a.attrs({
   target: "_blank",
 })<ButtonProps>`
   height: 78px;
-  width: 90%;
+  width: 80%;
   background-color: ${(props) =>
     props.white ? "white" : "rgba(255, 1, 129, 1)"};
   color: ${(props) => (props.white ? "rgba(255, 1, 129, 1)" : "white")};
@@ -116,10 +116,10 @@ export const Button = styled.a.attrs({
   font-size: 18px;
   display: flex;
   align-items: center;
+  align-self: center;
   justify-content: center;
   box-shadow: 0px 4px 15px rgba(255, 1, 128, 1);
-  padding-left: px;
-  padding-right: px;
+
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
