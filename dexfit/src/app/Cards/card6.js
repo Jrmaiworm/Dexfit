@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
+import { useState } from "react";
 import {
   BlackSubText,
   BlackText,
@@ -20,6 +21,15 @@ import theme from "../theme";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Card6() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <Box
       sx={{
@@ -60,6 +70,9 @@ export default function Card6() {
             borderRadius: 2,
             padding: { xs: 2, md: 5 },
           }}
+          className={isHovered ? "animate__animated animate__bounce" : ""}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           <BlackText style={{ fontWeight: "700", fontSize: 24 }}>
             Kit 5 unidades
@@ -110,6 +123,10 @@ export default function Card6() {
               padding: { xs: 5, md: 10 },
               boxShadow: "0px 4px 15px  rgba(255, 1, 129, 1)",
             }}
+            className={isHovered ? "animate__animated animate__bounce" : ""}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+           
           >
             <CardText style={{ fontWeight: "700", fontSize: 24 }}>Kit 3 unidades</CardText>
             <Image
@@ -144,6 +161,9 @@ export default function Card6() {
             borderRadius: 2,
             padding: { xs: 2, md: 5 },
           }}
+          className={isHovered ? "animate__animated animate__bounce" : ""}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           <BlackText style={{ fontWeight: "700", fontSize: 24 }}>Kit 1 unidade</BlackText>
           <Image

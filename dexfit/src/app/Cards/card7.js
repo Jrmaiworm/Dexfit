@@ -6,8 +6,25 @@ import {
   Text,
   TextCard,
 } from "../styles";
+import "animate.css";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function Card7() {
+  const [isAnimated, setIsAnimated] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setIsAnimated(true);
+    } else {
+      setIsAnimated(false);
+    }
+  }, [inView]);
+
   const ListCard = () => {
     const options = [
       {
@@ -49,7 +66,9 @@ export default function Card7() {
             key={index}
             sx={{
               display: "flex",
-              marginBottom:2
+              marginBottom: 2,
+              animation: isAnimated ? "shakeX 1s" : "",
+              animationDelay: `${0.5 + 0.2 * index}s`,
             }}
           >
             <Box
@@ -62,7 +81,6 @@ export default function Card7() {
                 height: 100,
                 borderRadius: "50%",
                 backgroundColor: "white",
-             
               }}
             >
               <Image
@@ -83,7 +101,6 @@ export default function Card7() {
               <PText>{option.title}</PText>
               <TextCard>{option.subTitle}</TextCard>
             </Box>
-            
           </Box>
         ))}
         <br />
@@ -93,6 +110,7 @@ export default function Card7() {
 
   return (
     <Box
+      ref={ref}
       sx={{
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
@@ -100,11 +118,12 @@ export default function Card7() {
         width: "100%",
         padding: { xs: 5, md: 5 },
       }}
+      className={isAnimated ? "animated shakeX" : ""}
     >
       <Box
         sx={{
           width: { xs: "100%", md: "50%" },
-          padding: { xs: 0, md: 10},
+          padding: { xs: 0, md: 10 },
           justifyContent: "center",
         }}
       >
@@ -130,14 +149,13 @@ export default function Card7() {
             paddingBottom: 5,
             alignItems: "center",
             alignSelf: "center",
-            marginTop:10,
+            marginTop: 10,
           }}
         >
           <Text>Nossa composição</Text>
         </Box>
         <Box>
           <ListCard />
-          
         </Box>
       </Box>
     </Box>

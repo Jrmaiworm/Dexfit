@@ -1,18 +1,33 @@
 import { Box } from "@mui/material";
-import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import {
   Text,
   TextCard,
 
 } from "../styles";
+import "animate.css";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import theme from "../theme";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
-
 export default function Card8() {
+  const [isAnimated, setIsAnimated] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setIsAnimated(true);
+    } else {
+      setIsAnimated(false);
+    }
+  }, [inView]);
+
   return (
     <Box
+      ref={ref}
       sx={{
         // boxShadow: '0 6px 80px -18px rgba(220,220,220, 0.81)',
         display: "flex",
@@ -24,6 +39,7 @@ export default function Card8() {
         backgroundImage: 'url("/RETANGULO2.png")',
         backgroundSize: "cover",
         backgroundPosition: "center",
+       
       }}
     >
       <Box
@@ -52,7 +68,9 @@ export default function Card8() {
             justifyContent: "center",
             borderRadius: 2,
             padding: {xs: 2, md: 5 },
-            marginBottom:5
+            marginBottom:5,
+            animation: isAnimated ? "fadeInUp 1s" : "",
+            animationDelay: "0.5s",
           }}
         >
           <Image
@@ -77,7 +95,9 @@ export default function Card8() {
             justifyContent: "center",
             borderRadius: 2,
             padding: {xs: 2, md: 5 },
-            marginBottom:5
+            marginBottom:5,
+            animation: isAnimated ? "fadeInUp 1s" : "",
+            animationDelay: "1s",
           }}
         >
           <Image
@@ -101,7 +121,9 @@ export default function Card8() {
             justifyContent: "center",
             borderRadius: 2,
             padding: {xs: 2, md: 5 },
-            marginBottom:5
+            marginBottom:5,
+            animation: isAnimated ? "fadeInUp 1s" : "",
+            animationDelay: "1.5s",
           }}
         >
           <Image

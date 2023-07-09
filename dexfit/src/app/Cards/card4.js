@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import { Montserrat } from "next/font/google";
 import theme from "../theme";
 import Image from "next/image";
+import "animate.css/animate.min.css";
 import {
   Button,
   HighlightTextContainer,
@@ -12,20 +13,39 @@ import {
   TextContainer,
   Title,
 } from "../styles";
+import "animate.css";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Card4() {
+  const [isAnimated, setIsAnimated] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setIsAnimated(true);
+    } else {
+      setIsAnimated(false);
+    }
+  }, [inView]);
+
   return (
     <Box
+      ref={ref}
       sx={{
-        // boxShadow: '0 6px 80px -18px rgba(220,220,220, 0.81)',
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
         width: "100%",
         padding: 5,
+        animation: isAnimated ? "shakeX 1s" : "",
       }}
+      className={isAnimated ? "animated shakeX" : ""}
     >
       <Box
         sx={{
@@ -69,13 +89,12 @@ export default function Card4() {
 
       <Box
         sx={{
-          // boxShadow: '0 6px 80px -18px rgba(220,220,220, 0.81)',
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           width: { xs: "100%", md: "60%" },
           padding: { xs: 0, md: 10 },
-          
+          animationDelay: "0.5s",
         }}
       >
         <Box
@@ -87,6 +106,7 @@ export default function Card4() {
             borderRadius: 2,
             color: "white",
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
+            animationDelay: "0.5s",
           }}
         >
           <Image
@@ -103,10 +123,9 @@ export default function Card4() {
               muito. Somos gratos por ter conhecido um produto tão incrível.
               Hoje dentro das clínicas Brasil Slim não sai um cliente sem levar
               o emagrecedor queridinho das mulheres do Brasil.
-            </TextCard>{" "}
+            </TextCard>
           </Box>
         </Box>
-        <Box></Box>
 
         <Box
           sx={{
@@ -118,6 +137,7 @@ export default function Card4() {
             color: "white",
             marginTop: 10,
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
+            animationDelay: "1s",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -127,9 +147,9 @@ export default function Card4() {
               em mamães pela grande dificuldade de emagrecer que elas tem.
               Depois do uso do Mãe Slim tudo mudou, hoje somos referência no
               emagrecimento saudável em Viçosa-MG e devemos muito ao Mãe Slim.
-              Vamos sempre indiciar porque a satisfação com o Mãe Slim dentro da
+              Vamos sempre indicar porque a satisfação com o Mãe Slim dentro da
               clínica é de 100% de nossas clientes.
-            </TextCard>{" "}
+            </TextCard>
           </Box>
           <Image
             style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
@@ -138,8 +158,6 @@ export default function Card4() {
             src="/emagresse.png"
           />
         </Box>
-
-        <Box></Box>
       </Box>
     </Box>
   );

@@ -1,10 +1,27 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
 import { Button, Text } from "../styles";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function Card3() {
+  const [isAnimated, setIsAnimated] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setIsAnimated(true);
+    } else {
+      setIsAnimated(false);
+    }
+  }, [inView]);
+
   return (
     <Box
+      ref={ref}
       sx={{
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
@@ -18,6 +35,8 @@ export default function Card3() {
         sx={{
           width: { xs: "100%", md: "40%" },
           padding: 5,
+          opacity: isAnimated ? 1 : 0, // Set the opacity based on isAnimated state
+          transition: "opacity 0.5s ease", // Add a transition effect for opacity change
         }}
       >
         <Image
