@@ -16,20 +16,26 @@ import {
   Title,
   WhiteSubText,
 } from "../styles";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import theme from "../theme";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Card6() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isAnimated, setIsAnimated] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+  useEffect(() => {
+    if (inView) {
+      setIsAnimated(true);
+    } else {
+      setIsAnimated(false);
+    }
+  }, [inView]);
   return (
     <Box
       sx={{
@@ -69,10 +75,10 @@ export default function Card6() {
             margin: 2,
             borderRadius: 2,
             padding: { xs: 2, md: 5 },
+            animation: isAnimated ? "fadeInUp 1s" : "",
+            animationDelay: "0.5s",
           }}
-          className={isHovered ? "animate__animated animate__bounce" : ""}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+       
         >
           <BlackText style={{ fontWeight: "700", fontSize: 24 }}>
             Kit 5 unidades
@@ -122,10 +128,10 @@ export default function Card6() {
               borderBottomRightRadius: 5,
               padding: { xs: 5, md: 10 },
               boxShadow: "0px 4px 15px  rgba(255, 1, 129, 1)",
+              animation: isAnimated ? "fadeInUp 1s" : "",
+              animationDelay: "1s",
             }}
-            className={isHovered ? "animate__animated animate__bounce" : ""}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+           
            
           >
             <CardText style={{ fontWeight: "700", fontSize: 24 }}>Kit 3 unidades</CardText>
@@ -160,10 +166,10 @@ export default function Card6() {
             margin: 2,
             borderRadius: 2,
             padding: { xs: 2, md: 5 },
+            animation: isAnimated ? "fadeInUp 1s" : "",
+            animationDelay: "1.5s",
           }}
-          className={isHovered ? "animate__animated animate__bounce" : ""}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+         
         >
           <BlackText style={{ fontWeight: "700", fontSize: 24 }}>Kit 1 unidade</BlackText>
           <Image

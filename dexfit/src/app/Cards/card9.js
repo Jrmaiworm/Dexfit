@@ -1,10 +1,27 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
 import { Button, Paragraph, Text } from "../styles";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+
 
 export default function Card9() {
+  const [isAnimated, setIsAnimated] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setIsAnimated(true);
+    } else {
+      setIsAnimated(false);
+    }
+  }, [inView]);
   return (
     <Box
+    ref={ref}
       sx={{
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
@@ -18,6 +35,8 @@ export default function Card9() {
         sx={{
           width: { xs: "100%", md: "40%" },
           padding: { xs: 0, md: 5 },
+          animation: isAnimated ? "shakeY 1s" : "",
+          animationDelay: "1s",
         }}
       >
         <Image
