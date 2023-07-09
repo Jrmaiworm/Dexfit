@@ -14,7 +14,6 @@ import {
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Card1() {
-  
   return (
     <Box
       sx={{
@@ -38,9 +37,7 @@ export default function Card1() {
           <br />
           PODEROSAS:
           <br />
-          <Text >
-            descubra o segredo
-          </Text>
+          <Text>descubra o segredo</Text>
           <HighlightTextContainer>
             <Text>para&nbsp;</Text>
             emagrecer

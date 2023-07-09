@@ -78,7 +78,6 @@ export default function Card6() {
             animation: isAnimated ? "fadeInUp 1s" : "",
             animationDelay: "0.5s",
           }}
-       
         >
           <BlackText style={{ fontWeight: "700", fontSize: 24 }}>
             Kit 5 unidades
@@ -131,10 +130,10 @@ export default function Card6() {
               animation: isAnimated ? "fadeInUp 1s" : "",
               animationDelay: "1s",
             }}
-           
-           
           >
-            <CardText style={{ fontWeight: "700", fontSize: 24 }}>Kit 3 unidades</CardText>
+            <CardText style={{ fontWeight: "700", fontSize: 24 }}>
+              Kit 3 unidades
+            </CardText>
             <Image
               style={{ objectFit: "contain" }}
               layout="responsive"
@@ -143,15 +142,15 @@ export default function Card6() {
               src="/3unidades.png"
             />
             <WhiteSubText style={{ fontSize: 16, fontWeight: "700" }}>
-              De R$ 687,00 por apenas:
+              De R$ 1.145,00 por apenas:
             </WhiteSubText>
             <WhiteSubText
               style={{ fontSize: 40, fontWeight: "900", alignItems: "center" }}
             >
-              <span style={{ fontSize: 16 }}>12X</span>&nbsp;R$ 29,82
+              <span style={{ fontSize: 16 }}>12X</span>&nbsp;R$ 44,68
             </WhiteSubText>
             <WhiteSubText style={{ fontSize: 16, fontWeight: "700" }}>
-              ou R$ 297,00 à vista
+              ou R$ 445,00 à vista
             </WhiteSubText>
             <br />
             <Button white>Eu Quero</Button>
@@ -169,9 +168,10 @@ export default function Card6() {
             animation: isAnimated ? "fadeInUp 1s" : "",
             animationDelay: "1.5s",
           }}
-         
         >
-          <BlackText style={{ fontWeight: "700", fontSize: 24 }}>Kit 1 unidade</BlackText>
+          <BlackText style={{ fontWeight: "700", fontSize: 24 }}>
+            Kit 1 unidade
+          </BlackText>
           <Image
             style={{ objectFit: "contain" }}
             layout="responsive"
@@ -181,15 +181,15 @@ export default function Card6() {
           />
           {/* //trocar a foto 1 unidade */}
           <BlackSubText style={{ fontSize: 16, fontWeight: "700" }}>
-            De R$ 687,00 por apenas:
+            De R$ 229,00 por apenas:
           </BlackSubText>
           <BlackSubText
             style={{ fontSize: 40, fontWeight: "900", alignItems: "center" }}
           >
-            <spam style={{ fontSize: 16 }}>12X</spam>&nbsp;R$ 29,82
+            <spam style={{ fontSize: 16 }}>12X</spam>&nbsp;R$ 15,76
           </BlackSubText>
           <PinkSubText style={{ fontSize: 16, fontWeight: "700" }}>
-            ou R$ 297,00 à vista
+            ou R$ 157,00 à vista
           </PinkSubText>
           <br />
           <Button>Eu Quero</Button>
