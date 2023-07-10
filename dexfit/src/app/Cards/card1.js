@@ -15,7 +15,6 @@ import {
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Card1() {
-  
   return (
     <Box
       sx={{
