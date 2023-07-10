@@ -7,6 +7,7 @@ import {
   HighlightTextContainer,
   Paragraph,
   PinkText,
+  SubText,
   Text,
   TextContainer,
 } from "../styles";
@@ -34,22 +35,18 @@ export default function Card1() {
         }}
       >
         <TextContainer>
-          MULHERES
-          <br />
-          PODEROSAS:
-          <br />
-          <Text >
-            descubra o segredo
+          <Text>
+
           </Text>
+        Tenha uma Vida mais Leve:
           <HighlightTextContainer>
-            <Text>para&nbsp;</Text>
-            emagrecer
+            <Box sx={{fontWeight:500, fontSize: { xs: 15, md: 30 }, color: "white" }}>Acabe de vez com a retenção de líquidos e o inchaço</Box >
+ 
           </HighlightTextContainer>
           <br />
-          <Box sx={{ fontSize: { xs: 15, md: 25 }, color: "white" }}>
-            Desperte a sua melhor versão com Dexfit! Esta cápsula exclusiva,
-            desenvolvida especialmente para mulheres, apresenta uma fórmula 100%
-            natural.
+          <Box sx={{ fontWeight:300, fontSize: { xs: 15, md: 20 }, color: "white" }}>
+          Desperte a sua melhor versão com Dexfit! Esta cápsula exclusiva,
+           desenvolvida especialmente para mulheres, apresenta uma fórmula 100% natural.
           </Box>
           <br />
           <Button>EU QUERO EMAGRECER</Button>

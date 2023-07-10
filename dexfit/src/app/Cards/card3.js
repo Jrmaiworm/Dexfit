@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
-import { Button, Text } from "../styles";
+import { Button, CardText, SecText, Text } from "../styles";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -59,15 +59,18 @@ export default function Card3() {
             paddingBottom: 5,
           }}
         >
+         
+         
           <Text>
-            Sinta-se uma MULHER&nbsp;
+          Desperte para uma Nova Vida! &nbsp;
           </Text>
+          
           <Text pink>
-            COMPLETA&nbsp; novamente!
+          Diga adeus à retenção de líquidos e ao inchaço&nbsp;
           </Text>
         </Box>
         <Box>
-          <Box
+          {/* <Box
             sx={{
               fontWeight: 700,
               fontSize: { xs: 15 , md: 20 },
@@ -226,10 +229,17 @@ export default function Card3() {
             >
               <div style={{ fontWeight: 700 }}>100% NATURAL</div>
             </Text>
+          </Box> */}
+             <Box sx={{ fontWeight:300, fontSize: { xs: 15, md: 20 }, color: "white" }}>
+             O BRASIL SLIM – DEXFIT com sua performance premium é composto por cinco ativos principais de alta potência,
+              CAFÉ VERDE, INULINA, VITAMINA B12, EXTRATO DE LARANJA MORO e o TRANS RESVERATROL, presentes na composição
+               de forma rica e restauradora, <SecText>promovendo uma vida mais saudável, melhora a qualidade de vida, reduz as dores
+                que o inchaço trás, melhora o funcionamento 
+             do organismo e traz alívio na hora de colocar uma roupa ou calçado</SecText>  sem se sentir inchada.
           </Box>
         </Box>
-
-        <Button>EU QUERO SER UMA MULHER COMPLETA</Button>
+        <br />
+        <Button>EU QUERO DESPERTAR UMA NOVA VIDA</Button>
       </Box>
     </Box>
   );

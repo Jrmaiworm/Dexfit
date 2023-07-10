@@ -39,7 +39,7 @@ export default function Card4() {
       ref={ref}
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", md: "row" },
+        flexDirection: "column",
         alignItems: "center",
         width: "100%",
         padding: 5,
@@ -49,51 +49,103 @@ export default function Card4() {
     >
       <Box
         sx={{
-          width: { xs: "100%", md: "40%" },
+          width: { xs: "100%", md: "100%" },
           padding: { xs: 0, md: 5 },
         }}
       >
         <TextContainer>
           <Text>
-            Não perca os <Text pink> relatos impressionantes </Text>
+            Não perca os{" "}
+            <Text pink>
+              {" "}
+              relatos impressionantes de profissionais que indicam nosso produto
+            </Text>
           </Text>
-
-          <Box
-            sx={{ fontSize: { xs: 15, md: 25 }, color: "white", marginTop: 5 }}
-          >
-            Descubra os relatos inspiradores das mulheres que usaram o poderoso
-            remédio DexFit para emagrecer.
-          </Box>
-
-          <Box
-            sx={{ fontSize: { xs: 15, md: 25 }, color: "white", marginTop: 5 }}
-          >
-            O DexFit impulsionou o metabolismo, controlou o apetite e aumentou a
-            queima de gordura!
-          </Box>
-
-          <Box
-            sx={{ fontSize: { xs: 15, md: 25 }, color: "white", marginTop: 5 }}
-          >
-            Leia esses relatos e seja motivado a começar sua própria jornada de
-            transformação rumo a uma vida mais saudável e confiante com o
-            DexFit!
-          </Box>
-          <br />
-          <br />
-          <Button>EU QUERO MUDAR</Button>
-          <br />
-          <br />
         </TextContainer>
       </Box>
 
       <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
-          width: { xs: "100%", md: "60%" },
-          padding: { xs: 0, md: 10 },
+          width: { xs: "100%", md: "100%" },
+          padding: { xs: 0, md: 0 },
+
+          animationDelay: "0.5s",
+        }}
+      >
+        <Box
+          sx={{
+            width: { xs: "100%", md: "50%" }, 
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            padding: 3,
+            backgroundColor: theme.colors.secondary,
+            borderRadius: 2,
+            margin: 2,
+            color: "white",
+           
+            boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
+            animationDelay: "1s",
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "column" }}>
+            <Title>ISABELA OLIVEIRA, NUTRICIONISTA- RJ</Title>
+            <TextCard>
+            “Sou nutricionista, e em meus atendimentos com minhas clientes
+             que sofrem de muita retenção de líquido sempre indico o BRASIL
+              SLIM – DEXFIT ele é um excelente diurético, realmente ele cumpre 
+              o que promete. Super recomendo.”
+
+            </TextCard>
+          </Box>
+          <Image
+            style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
+            width={175}
+            height={175}
+            src="/Ellipse1.png"
+          />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            width: { xs: "100%", md: "50%" },
+            flexDirection: { xs: "column", md: "row" },
+            padding: 3,
+            backgroundColor: theme.colors.secondary,
+            borderRadius: 2,
+            color: "white",
+            margin: 2,
+       
+            boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
+            animationDelay: "1s",
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "column" }}>
+            <Title>DRA. MARIA CLARA DIAS, BIOMÉDICA ESTETA – RJ</Title>
+            <TextCard>
+            “Eu como biomédica esteta, posso dizer que os ingredientes que formam o BRASIL SLIM- DEXFIT
+             são certeiros no quesito de desinchar, ter ação diurética, auxilia no emagrecimento. 
+            Não há dúvidas quanto a eficácia do BRASIL SLIM- DEXFIT, ele é mais do que aprovado “.
+            </TextCard>
+          </Box>
+          <Image
+            style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
+            width={175}
+            height={175}
+            src="/Ellipse2.png"
+          />
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          alignItems: "center",
+          width: { xs: "100%", md: "100%" },
+          padding: { xs: 0, md: 0 },
+
           animationDelay: "0.5s",
         }}
       >
@@ -101,32 +153,32 @@ export default function Card4() {
           sx={{
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
-            padding: 3,
+            padding: 6.8,
             backgroundColor: theme.colors.secondary,
             borderRadius: 2,
+            margin: 2,
             color: "white",
+            width: { xs: "100%", md: "50%" },
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
-            animationDelay: "0.5s",
+            animationDelay: "1s",
           }}
         >
+          <Box sx={{ display: "flex", flexDirection: "column" }}>
+            <Title>MONALISA ROCHA, ESTETICISTA – MG</Title>
+            <TextCard>
+            “Trabalho há bastante tempo na aérea do embelezamento corporal e nunca tinha visto algo
+             tão eficaz quanto o BRASIL SLIM- DEXFIT, ele ajuda muito minhas clientes que fazem a drenagem 
+             a ter um resultado muito mais rápido 
+             se sentir mais desinchada por isso ele é conhecido como “drenagem em cápsulas”.
+            </TextCard>
+          </Box>
           <Image
             style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
             width={175}
             height={175}
-            src="/Brasil.png"
+            src="/Ellipse3.png"
           />
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
-            <Title>Brasil Slim</Title>
-            <TextCard>
-              Utilizamos na nossa rede com nossos clientes o Mãe Slim e desde
-              que começamos a utilizar os resultados no emagrecimento melhoraram
-              muito. Somos gratos por ter conhecido um produto tão incrível.
-              Hoje dentro das clínicas Brasil Slim não sai um cliente sem levar
-              o emagrecedor queridinho das mulheres do Brasil.
-            </TextCard>
-          </Box>
         </Box>
-
         <Box
           sx={{
             display: "flex",
@@ -135,27 +187,27 @@ export default function Card4() {
             backgroundColor: theme.colors.secondary,
             borderRadius: 2,
             color: "white",
-            marginTop: 10,
+            margin: 2,
+            width: { xs: "100%", md: "50%" },
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
             animationDelay: "1s",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
-            <Title>Clínica EmagreSee</Title>
+            <Title>THAIS VIANA, FARMACÊUTICA ESTETA – MG</Title>
             <TextCard>
-              Na nossa clínica tínhamos grande dificuldade em gerar resultados
-              em mamães pela grande dificuldade de emagrecer que elas tem.
-              Depois do uso do Mãe Slim tudo mudou, hoje somos referência no
-              emagrecimento saudável em Viçosa-MG e devemos muito ao Mãe Slim.
-              Vamos sempre indicar porque a satisfação com o Mãe Slim dentro da
-              clínica é de 100% de nossas clientes.
+            “Desde a minha graduação em farmácia vi que a inúmeras vantagens e benefícios que a suplementação
+             natural tem e grande potência, nisso o BRASIL SLIM -DEXFIT fornece o que há mais de inovador e eficaz
+              que o mercado nacional já teve, estou super satisfeita com minhas clientes tanto na farmácia quanto 
+              na minha clínica, pois também trabalho na área de estética. BRASIL SLIM – DEXFIT
+             é o nome certo para 2023. SEGURANÇA, TECNOLOGIA E CREDIBILIDADE É O QUE ELE OFERECE A VOCÊ.”
             </TextCard>
           </Box>
           <Image
             style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
             width={175}
             height={175}
-            src="/emagresse.png"
+            src="/Ellipse4.png"
           />
         </Box>
       </Box>

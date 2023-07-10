@@ -23,7 +23,8 @@ export const Container = styled.div`
 export const PinkText = styled.div`
   color: #ef3693;
 `;
-export const TextContainer = styled.div``;
+export const TextContainer = styled.div`
+`;
 
 export const WhiteText = styled.div`
   color: white;
@@ -80,8 +81,22 @@ export const CardText = styled.div`
   justify-content: center;
   padding: 25px 15px 15px;
 `;
+export const SecText = styled.div`
+  color: white;
+  display: flex;
+  font-weight: 700;
+  font-size: 20px;
+  align-self: center;
+  justify-content: center;
+
+`;
 export const Text = styled.text<TextProps>`
   color: ${(props) => (props.pink ? "rgba(255, 1, 129, 1)" : "white")};
+`;
+export const SubText = styled.text<TextProps>`
+  color: ${(props) => (props.pink ? "rgba(255, 1, 129, 1)" : "white")};
+  font-weight: 500;
+  font-size: 30px;
 `;
 
 export const HighlightTextContainer = styled.div`

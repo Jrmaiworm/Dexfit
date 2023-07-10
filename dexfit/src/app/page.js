@@ -41,8 +41,8 @@ export default function Home() {
 
       <Card4 />
 
-      <Card5 />
-
+      {/* <Card5 /> */}
+{/* 
       <Card6 />
 
       <Card7 />
@@ -51,7 +51,7 @@ export default function Home() {
 
       <Card9 />
 
-      <Card10 />
+      <Card10 /> */}
     </Box>
   );
 }

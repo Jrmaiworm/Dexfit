@@ -62,7 +62,7 @@ export default function Card2() {
         sx={{
           width: { xs: "50%", md: "20%" },
           fontWeight: 900,
-          fontSize: { xs: 18, md: 24 },
+          fontSize: { xs: 18, md: 22 },
           margin: 5,
           animation: isAnimated1 ? "fadeInRight 1s" : "",
           opacity: isAnimated1 ? 1 : 0,
@@ -76,13 +76,7 @@ export default function Card2() {
           height={156}
           src="/CALORIA.png"
         />
-        <PinkText>Potencialize seu metabolismo</PinkText>
-
-        <Paragraph style={{ fontWeight: 400, fontSize: 20 }}>
-          <br />
-          Queime gordura de forma rápida e natural através do aumento do seu
-          metabolismo. Experimente agora o poder de Dexfit
-        </Paragraph>
+        <PinkText>Ação antioxidante e anti-inflamatória</PinkText>
       </Box>
 
       <Box
@@ -90,7 +84,7 @@ export default function Card2() {
         sx={{
           width: { xs: "50%", md: "20%" },
           fontWeight: 900,
-          fontSize: 24,
+          fontSize: 22,
           margin: 5,
           animation: isAnimated2 ? "fadeInRight 1s" : "",
           opacity: isAnimated2 ? 1 : 0,
@@ -104,12 +98,7 @@ export default function Card2() {
           height={156}
           src="/MEDIDAS.png"
         />
-        <PinkText>Reduza medidas em tempo recorde!</PinkText>
-        <Paragraph style={{ fontWeight: 400, fontSize: 20 }}>
-          <br />
-          Veja resultados visíveis em pouco tempo e diga adeus às roupas plus
-          size.
-        </Paragraph>
+        <PinkText>Reduz Inchaço</PinkText>
       </Box>
 
       <Box
@@ -117,7 +106,7 @@ export default function Card2() {
         sx={{
           width: { xs: "50%", md: "20%" },
           fontWeight: 900,
-          fontSize: 24,
+          fontSize: 22,
           margin: 5,
           animation: isAnimated3 ? "fadeInRight 1s" : "",
           opacity: isAnimated3 ? 1 : 0,
@@ -131,12 +120,7 @@ export default function Card2() {
           height={156}
           src="/BELEZA.png"
         />
-        <PinkText>Desperte a beleza interior</PinkText>
-        <Paragraph style={{ fontWeight: 400, fontSize: 20 }}>
-          <br />
-          Tenha uma pele firme, radiante e saudável, cabelos deslumbrantes e
-          unhas impecáveis.
-        </Paragraph>
+        <PinkText>Bem estar renovado</PinkText>
       </Box>
     </Box>
   );
