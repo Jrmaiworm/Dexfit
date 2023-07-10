@@ -23,7 +23,7 @@ export default function Card4() {
   const [isAnimated, setIsAnimated] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.2,
   });
 
   useEffect(() => {
@@ -43,9 +43,9 @@ export default function Card4() {
         alignItems: "center",
         width: "100%",
         padding: 5,
-        animation: isAnimated ? "shakeX 1s" : "",
+        animation: isAnimated ? "fadeInLeft 1s" : "",
       }}
-      className={isAnimated ? "animated shakeX" : ""}
+      className={isAnimated ? "fadeInLeft 1s" : ""}
     >
       <Box
         sx={{
