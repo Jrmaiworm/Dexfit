@@ -113,7 +113,7 @@ export const TextCard = styled(WhiteText)`
 `;
 export const Title = styled.text<TitleProps>`
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 5px;
   color: ${(props) => (props.black ? "black" : "white")};
 `;

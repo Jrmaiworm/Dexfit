@@ -62,20 +62,35 @@ export default function Card2_rosa() {
         sx={{
           width: { xs: "50%", md: "20%" },
           fontWeight: 900,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent:  "center",
           fontSize: { xs: 18, md: 22 },
           margin: 5,
+          paddingTop:7,
           animation: isAnimated1 ? "fadeInRight 1s" : "",
           opacity: isAnimated1 ? 1 : 0,
           transition: "opacity 0.5s ease",
+         
+        }}
+      >
+          <Box
+        ref={ref1}
+        sx={{
+         alignSelf:'center',
+         paddingBottom:3,
+        width:100,
+        
         }}
       >
         <Image
           style={{ objectFit: "contain" }}
-        
+          layout="responsive"
           width={120}
           height={130}
           src="/CALORIA1.png"
         />
+        </Box>
         <PinkText>Ação antioxidante e anti-inflamatória</PinkText>
       </Box>
 

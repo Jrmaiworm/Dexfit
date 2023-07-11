@@ -42,10 +42,8 @@ export default function Card4_rosa() {
         flexDirection: "column",
         alignItems: "center",
         width: "100%",
-        padding: 5,
-       
+        padding: 2,
       }}
-    
     >
       <Box
         sx={{
@@ -61,10 +59,9 @@ export default function Card4_rosa() {
               relatos impressionantes de profissionais que indicam nosso produto
             </Text>
           </Text>
-        
         </TextContainer>
       </Box>
-      <br/>
+      <br />
       <Box
         sx={{
           display: "flex",
@@ -73,7 +70,6 @@ export default function Card4_rosa() {
           width: { xs: "100%", md: "100%" },
           padding: { xs: 0, md: 0 },
           alignItems: "stretch",
-    
         }}
       >
         <Box
@@ -86,7 +82,7 @@ export default function Card4_rosa() {
             borderRadius: 2,
             margin: { xs: 0, md: 2 },
             color: "white",
-            height: 350,
+            height: { xs: 450, md: 350 },
             alignItems: "center",
             justifyContent: "center",
             flex: 1,
@@ -96,14 +92,21 @@ export default function Card4_rosa() {
             transition: "opacity 0.5s ease",
           }}
         >
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              fontWeight: 300,
+              fontSize: 12,
+              
+            }}
+          >
             <Title>ISABELA OLIVEIRA, NUTRICIONISTA- RJ</Title>
-            <TextCard>
-              “Sou nutricionista, e em meus atendimentos com minhas clientes que
-              sofrem de muita retenção de líquido sempre indico o BRASIL SLIM –
-              DEXFIT ele é um excelente diurético, realmente ele cumpre o que
-              promete. Super recomendo.”
-            </TextCard>
+            <br/>
+            “Sou nutricionista, e em meus atendimentos com minhas clientes que
+            sofrem de muita retenção de líquido sempre indico o BRASIL SLIM –
+            DEXFIT ele é um excelente diurético, realmente ele cumpre o que
+            promete. Super recomendo.”
           </Box>
           <Image
             style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
@@ -112,7 +115,7 @@ export default function Card4_rosa() {
             src="/Ellipse1.png"
           />
         </Box>
-        <br/>
+        <br />
         <Box
           sx={{
             display: "flex",
@@ -122,27 +125,30 @@ export default function Card4_rosa() {
             backgroundColor: theme.colors.secondary,
             borderRadius: 2,
             color: "white",
-           margin: { xs: 0, md: 2 },
-            height: 350,
+            margin: { xs: 0, md: 2 },
+            height: { xs: 450, md: 350 },
             alignItems: "center",
             justifyContent: "center",
             flex: 1,
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
-      
-           animation: isAnimated ? "fadeIn 2s" : "",
+
+            animation: isAnimated ? "fadeIn 2s" : "",
             animationDelay: "1s",
             transition: "opacity 0.5s ease",
           }}
         >
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box sx={{   display: "flex",
+              flexDirection: "column",
+              fontWeight: 300,
+              fontSize: 12, }}>
             <Title>DRA. MARIA CLARA DIAS, BIOMÉDICA ESTETA – RJ</Title>
-            <TextCard>
+            <br/>
               “Eu como biomédica esteta, posso dizer que os ingredientes que
               formam o BRASIL SLIM- DEXFIT são certeiros no quesito de
               desinchar, ter ação diurética, auxilia no emagrecimento. Não há
               dúvidas quanto a eficácia do BRASIL SLIM- DEXFIT, ele é mais do
               que aprovado “.
-            </TextCard>
+          
           </Box>
           <Image
             style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
@@ -151,7 +157,7 @@ export default function Card4_rosa() {
             src="/Ellipse2.png"
           />
         </Box>
-        <br/>
+        <br />
       </Box>
       <Box
         sx={{
@@ -165,44 +171,6 @@ export default function Card4_rosa() {
           transition: "opacity 0.5s ease",
         }}
       >
-          <Box
-          sx={{
-            display: "flex",
-            width: { xs: "100%", md: "50%" },
-            flexDirection: { xs: "column", md: "row" },
-            padding: 3,
-            backgroundColor: theme.colors.secondary,
-            borderRadius: 2,
-            color: "white",
-            margin: { xs: 0, md: 2 },
-            height: 350,
-            alignItems: "center",
-            justifyContent: "center",
-            flex: 1,
-            boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
-            animation: isAnimated ? "fadeIn 2s" : "",
-            animationDelay: "1.5s",
-            transition: "opacity 0.5s ease",
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
-            <Title>MONALISA ROCHA, ESTETICISTA – MG</Title>
-            <TextCard>
-              “Trabalho há bastante tempo na aérea do embelezamento corporal e
-              nunca tinha visto algo tão eficaz quanto o BRASIL SLIM- DEXFIT,
-              ele ajuda muito minhas clientes que fazem a drenagem a ter um
-              resultado muito mais rápido se sentir mais desinchada por isso ele
-              é conhecido como “drenagem em cápsulas”.
-            </TextCard>
-          </Box>
-          <Image
-            style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
-            width={175}
-            height={175}
-            src="/Ellipse3.png"
-          />
-        </Box>
-        <br/>
         <Box
           sx={{
             display: "flex",
@@ -213,7 +181,48 @@ export default function Card4_rosa() {
             borderRadius: 2,
             color: "white",
             margin: { xs: 0, md: 2 },
-            height: 350,
+            height: { xs: 450, md: 350 },
+            alignItems: "center",
+            justifyContent: "center",
+            flex: 1,
+            boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
+            animation: isAnimated ? "fadeIn 2s" : "",
+            animationDelay: "1.5s",
+            transition: "opacity 0.5s ease",
+          }}
+        >
+          <Box sx={{   display: "flex",
+              flexDirection: "column",
+              fontWeight: 300,
+              fontSize: 12, }}>
+            <Title>MONALISA ROCHA, ESTETICISTA – MG</Title>
+            <br/>
+              “Trabalho há bastante tempo na aérea do embelezamento corporal e
+              nunca tinha visto algo tão eficaz quanto o BRASIL SLIM- DEXFIT,
+              ele ajuda muito minhas clientes que fazem a drenagem a ter um
+              resultado muito mais rápido se sentir mais desinchada por isso ele
+              é conhecido como “drenagem em cápsulas”.
+            
+          </Box>
+          <Image
+            style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
+            width={175}
+            height={175}
+            src="/Ellipse3.png"
+          />
+        </Box>
+        <br />
+        <Box
+          sx={{
+            display: "flex",
+            width: { xs: "100%", md: "50%" },
+            flexDirection: { xs: "column", md: "row" },
+            padding: 3,
+            backgroundColor: theme.colors.secondary,
+            borderRadius: 2,
+            color: "white",
+            margin: { xs: 0, md: 2 },
+            height: { xs: 450, md: 350 },
             alignItems: "center",
             justifyContent: "center",
             flex: 1,
@@ -223,9 +232,12 @@ export default function Card4_rosa() {
             transition: "opacity 0.5s ease",
           }}
         >
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box sx={{   display: "flex",
+              flexDirection: "column",
+              fontWeight: 300,
+              fontSize: 12, }}>
             <Title>THAIS VIANA, FARMACÊUTICA ESTETA – MG</Title>
-            <TextCard>
+            <br/>
               “Desde a minha graduação em farmácia vi que a inúmeras vantagens e
               benefícios que a suplementação natural tem e grande potência,
               nisso o BRASIL SLIM -DEXFIT fornece o que há mais de inovador e
@@ -234,7 +246,7 @@ export default function Card4_rosa() {
               também trabalho na área de estética. BRASIL SLIM – DEXFIT é o nome
               certo para 2023. SEGURANÇA, TECNOLOGIA E CREDIBILIDADE É O QUE ELE
               OFERECE A VOCÊ.”
-            </TextCard>
+          
           </Box>
           <Image
             style={{ objectFit: "contain", margin: 15, alignSelf: "center" }}
@@ -243,7 +255,7 @@ export default function Card4_rosa() {
             src="/Ellipse4.png"
           />
         </Box>
-        <br/>
+        <br />
       </Box>
     </Box>
   );
