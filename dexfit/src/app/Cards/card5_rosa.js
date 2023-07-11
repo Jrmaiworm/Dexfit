@@ -26,7 +26,7 @@ export default function Card5_rosa() {
   const [isAnimated, setIsAnimated] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.5,
   });
 
   useEffect(() => {
@@ -38,6 +38,7 @@ export default function Card5_rosa() {
   }, [inView]);
   return (
     <Box
+    ref={ref}
       sx={{
         // boxShadow: '0 6px 80px -18px rgba(220,220,220, 0.81)',
         display: "flex",
@@ -117,6 +118,8 @@ export default function Card5_rosa() {
               backgroundColor: "white",
               borderRadius: 2,
               padding: 5,
+              animation: isAnimated ? "fadeInUp 1s" : "",
+              animationDelay: "1s",
             }}
           >
             MAIS POPULAR
@@ -131,7 +134,7 @@ export default function Card5_rosa() {
               borderBottomRightRadius: 5,
               padding: { xs: 5, md: 5 },
               boxShadow: "0px 4px 15px  rgba(255, 1, 129, 1)",
-              animation: isAnimated ? "fadeInUp 1s" : "",
+              animation: isAnimated ? "fadeIn 1s" : "",
               animationDelay: "1s",
             }}
           >
@@ -170,7 +173,7 @@ export default function Card5_rosa() {
             margin: 2,
             borderRadius: 2,
             padding: { xs: 5, md: 5 },
-            animation: isAnimated ? "fadeInUp 1s" : "",
+            animation: isAnimated ? "fadeInUp  1s" : "",
             animationDelay: "1.5s",
           }}
         >

@@ -23,7 +23,7 @@ export default function Card4_rosa() {
   const [isAnimated, setIsAnimated] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.5,
   });
 
   useEffect(() => {
@@ -43,9 +43,9 @@ export default function Card4_rosa() {
         alignItems: "center",
         width: "100%",
         padding: 5,
-        animation: isAnimated ? "fadeInLeft 1s" : "",
+       
       }}
-      className={isAnimated ? "fadeInLeft 1s" : ""}
+    
     >
       <Box
         sx={{
@@ -73,7 +73,7 @@ export default function Card4_rosa() {
           width: { xs: "100%", md: "100%" },
           padding: { xs: 0, md: 0 },
           alignItems: "stretch",
-          animationDelay: "0.5s",
+    
         }}
       >
         <Box
@@ -91,7 +91,8 @@ export default function Card4_rosa() {
             justifyContent: "center",
             flex: 1,
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
-            animationDelay: "1s",
+            animation: isAnimated ? "fadeIn 2s" : "",
+            animationDelay: "0.5s",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -126,6 +127,8 @@ export default function Card4_rosa() {
             justifyContent: "center",
             flex: 1,
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
+      
+           animation: isAnimated ? "fadeIn 2s" : "",
             animationDelay: "1s",
           }}
         >
@@ -174,7 +177,8 @@ export default function Card4_rosa() {
             justifyContent: "center",
             flex: 1,
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
-            animationDelay: "1s",
+            animation: isAnimated ? "fadeIn 2s" : "",
+            animationDelay: "1.5s",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -210,7 +214,8 @@ export default function Card4_rosa() {
             justifyContent: "center",
             flex: 1,
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
-            animationDelay: "1s",
+            animation: isAnimated ? "fadeIn 2s" : "",
+            animationDelay: "2s",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
