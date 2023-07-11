@@ -79,8 +79,8 @@ export default function Card5_rosa() {
             margin: 2,
             borderRadius: 2,
             padding: { xs: 5, md: 5 },
-            animation: isAnimated ? "fadeInUp 1s" : "",
-            animationDelay: "0.5s",
+            // animation: isAnimated ? "fadeInUp 1s" : "",
+            // animationDelay: "0.5s",
           }}
         >
           <BlackText style={{ fontWeight: "700", fontSize: 24 }}>
@@ -135,7 +135,7 @@ export default function Card5_rosa() {
               padding: { xs: 5, md: 5 },
               boxShadow: "0px 4px 15px  rgba(255, 1, 129, 1)",
               animation: isAnimated ? "fadeIn 1s" : "",
-              animationDelay: "1s",
+        
             }}
           >
             <CardText style={{ fontWeight: "700", fontSize: 24 }}>
@@ -173,8 +173,8 @@ export default function Card5_rosa() {
             margin: 2,
             borderRadius: 2,
             padding: { xs: 5, md: 5 },
-            animation: isAnimated ? "fadeInUp  1s" : "",
-            animationDelay: "1.5s",
+            // animation: isAnimated ? "fadeInUp  1s" : "",
+            // animationDelay: "1.5s",
           }}
         >
           <BlackText style={{ fontWeight: "700", fontSize: 24 }}>

@@ -93,6 +93,7 @@ export default function Card4_rosa() {
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
             animation: isAnimated ? "fadeIn 2s" : "",
             animationDelay: "0.5s",
+            transition: "opacity 0.5s ease",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -130,6 +131,7 @@ export default function Card4_rosa() {
       
            animation: isAnimated ? "fadeIn 2s" : "",
             animationDelay: "1s",
+            transition: "opacity 0.5s ease",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -160,6 +162,7 @@ export default function Card4_rosa() {
           padding: { xs: 0, md: 0 },
           alignItems: "stretch",
           animationDelay: "0.5s",
+          transition: "opacity 0.5s ease",
         }}
       >
           <Box
@@ -179,6 +182,7 @@ export default function Card4_rosa() {
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
             animation: isAnimated ? "fadeIn 2s" : "",
             animationDelay: "1.5s",
+            transition: "opacity 0.5s ease",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -216,6 +220,7 @@ export default function Card4_rosa() {
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
             animation: isAnimated ? "fadeIn 2s" : "",
             animationDelay: "2s",
+            transition: "opacity 0.5s ease",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
