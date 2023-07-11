@@ -71,7 +71,7 @@ export default function Card4_rosa() {
           alignItems: "center",
           width: { xs: "100%", md: "100%" },
           padding: { xs: 0, md: 0 },
-
+          alignItems: "stretch",
           animationDelay: "0.5s",
         }}
       >
@@ -83,12 +83,12 @@ export default function Card4_rosa() {
             padding: 3,
             backgroundColor: theme.colors.secondary,
             borderRadius: 2,
-            margin: 2,
+            margin: { xs: 0, md: 2 },
             color: "white",
-            height: "50%",
+            height: 350,
             alignItems: "center",
             justifyContent: "center",
-
+            flex: 1,
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
             animationDelay: "1s",
           }}
@@ -109,6 +109,7 @@ export default function Card4_rosa() {
             src="/Ellipse1.png"
           />
         </Box>
+        <br/>
         <Box
           sx={{
             display: "flex",
@@ -118,11 +119,11 @@ export default function Card4_rosa() {
             backgroundColor: theme.colors.secondary,
             borderRadius: 2,
             color: "white",
-            margin: 2,
-            height: "50%",
+           margin: { xs: 0, md: 2 },
+            height: 350,
             alignItems: "center",
             justifyContent: "center",
-
+            flex: 1,
             boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
             animationDelay: "1s",
           }}
@@ -144,6 +145,7 @@ export default function Card4_rosa() {
             src="/Ellipse2.png"
           />
         </Box>
+        <br/>
       </Box>
       <Box
         sx={{
@@ -152,25 +154,26 @@ export default function Card4_rosa() {
           alignItems: "center",
           width: { xs: "100%", md: "100%" },
           padding: { xs: 0, md: 0 },
-
+          alignItems: "stretch",
           animationDelay: "0.5s",
         }}
       >
-        <Box
+          <Box
           sx={{
             display: "flex",
+            width: { xs: "100%", md: "50%" },
             flexDirection: { xs: "column", md: "row" },
-            padding: 6.8,
+            padding: 3,
             backgroundColor: theme.colors.secondary,
             borderRadius: 2,
-            margin: 2,
             color: "white",
-            width: { xs: "100%", md: "50%" },
-            boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
-            animationDelay: "1s",
-            height: "50%",
+            margin: { xs: 0, md: 2 },
+            height: 350,
             alignItems: "center",
             justifyContent: "center",
+            flex: 1,
+            boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
+            animationDelay: "1s",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -190,21 +193,23 @@ export default function Card4_rosa() {
             src="/Ellipse3.png"
           />
         </Box>
+        <br/>
         <Box
           sx={{
             display: "flex",
+            width: { xs: "100%", md: "50%" },
             flexDirection: { xs: "column", md: "row" },
-            padding: 6.8,
+            padding: 3,
             backgroundColor: theme.colors.secondary,
             borderRadius: 2,
-            margin: 2,
             color: "white",
-            width: { xs: "100%", md: "50%" },
-            boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
-            animationDelay: "1s",
-            height: "50%",
+            margin: { xs: 0, md: 2 },
+            height: 350,
             alignItems: "center",
             justifyContent: "center",
+            flex: 1,
+            boxShadow: "0px 4px 15px rgba(255, 1, 128, 1)",
+            animationDelay: "1s",
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -227,6 +232,7 @@ export default function Card4_rosa() {
             src="/Ellipse4.png"
           />
         </Box>
+        <br/>
       </Box>
     </Box>
   );

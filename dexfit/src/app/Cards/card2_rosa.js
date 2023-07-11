@@ -71,10 +71,10 @@ export default function Card2_rosa() {
       >
         <Image
           style={{ objectFit: "contain" }}
-          layout="responsive"
-          width={197}
-          height={156}
-          src="/CALORIA.png"
+        
+          width={120}
+          height={130}
+          src="/CALORIA1.png"
         />
         <PinkText>Ação antioxidante e anti-inflamatória</PinkText>
       </Box>
@@ -94,8 +94,8 @@ export default function Card2_rosa() {
         <Image
           style={{ objectFit: "contain" }}
           layout="responsive"
-          width={197}
-          height={156}
+          width={127}
+          height={150}
           src="/MEDIDAS.png"
         />
         <PinkText>Reduz Inchaço</PinkText>
@@ -116,8 +116,8 @@ export default function Card2_rosa() {
         <Image
           style={{ objectFit: "contain" }}
           layout="responsive"
-          width={197}
-          height={156}
+          width={127}
+          height={150}
           src="/BELEZA.png"
         />
         <PinkText>Bem estar renovado</PinkText>

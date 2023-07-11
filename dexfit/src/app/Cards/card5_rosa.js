@@ -77,7 +77,7 @@ export default function Card5_rosa() {
             backgroundColor: "white",
             margin: 2,
             borderRadius: 2,
-            padding: { xs: 2, md: 5 },
+            padding: { xs: 5, md: 5 },
             animation: isAnimated ? "fadeInUp 1s" : "",
             animationDelay: "0.5s",
           }}
@@ -87,10 +87,11 @@ export default function Card5_rosa() {
           </BlackText>
           <Image
             style={{ objectFit: "contain" }}
-            layout="responsive"
-            width={600}
-            height={475}
-            src="/3unidades.png"
+         
+          
+            width={220}
+            height={220}
+            src="/5unidades.png"
           />
           <BlackSubText style={{ fontSize: 16, fontWeight: "700" }}>
             De R$ 798,00 por apenas:
@@ -167,20 +168,20 @@ export default function Card5_rosa() {
             backgroundColor: "white",
             margin: 2,
             borderRadius: 2,
-            padding: { xs: 2, md: 5 },
+            padding: { xs: 5, md: 5 },
             animation: isAnimated ? "fadeInUp 1s" : "",
             animationDelay: "1.5s",
           }}
         >
           <BlackText style={{ fontWeight: "700", fontSize: 24 }}>
-            Kit 1 unidade
+            1 unidade
           </BlackText>
           <Image
             style={{ objectFit: "contain" }}
-            layout="responsive"
-            width={600}
-            height={475}
-            src="/3unidades.png"
+          
+            width={220}
+            height={220}
+            src="/1unidade.png"
           />
           {/* //trocar a foto 1 unidade */}
           <BlackSubText style={{ fontSize: 16, fontWeight: "700" }}>

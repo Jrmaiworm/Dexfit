@@ -123,7 +123,7 @@ export const Button = styled.a.attrs({
   target: "_blank",
 })<ButtonProps>`
   height: 78px;
-  width: 80%;
+  width: 100%;
   background-color: ${(props) =>
     props.white ? "white" : "rgba(255, 1, 129, 1)"};
   color: ${(props) => (props.white ? "rgba(255, 1, 129, 1)" : "white")};

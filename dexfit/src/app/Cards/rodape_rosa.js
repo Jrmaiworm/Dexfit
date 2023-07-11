@@ -5,7 +5,7 @@ export default function Rodape_rosa() {
   return (
     <Box
       sx={{
-        height: { xs: 300, md: 450 },
+        height: { xs: 200, md: 300 },
         backgroundColor: "rgba(255, 1, 129, 1)",
         width: "100%",
       }}
