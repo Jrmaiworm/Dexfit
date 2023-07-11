@@ -22,7 +22,7 @@ import theme from "../theme";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export default function Card6() {
+export default function Card5_rosa() {
   const [isAnimated, setIsAnimated] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -64,6 +64,9 @@ export default function Card6() {
           display: "flex",
           width: "100%",
           flexDirection: { xs: "column", md: "row" },
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <Box
@@ -90,16 +93,16 @@ export default function Card6() {
             src="/3unidades.png"
           />
           <BlackSubText style={{ fontSize: 16, fontWeight: "700" }}>
-            De R$ 687,00 por apenas:
+            De R$ 798,00 por apenas:
           </BlackSubText>
           <BlackSubText
             style={{ fontSize: 40, fontWeight: "900", alignItems: "center" }}
           >
             <span style={{ fontSize: 16 }}>12X</span>
-            &nbsp;R$ 29,82
+            &nbsp;R$ 39,70
           </BlackSubText>
           <PinkSubText style={{ fontSize: 16, fontWeight: "700" }}>
-            ou R$ 297,00 à vista
+            ou R$ 397,00 à vista
           </PinkSubText>
           <br />
           <Button>Eu Quero</Button>
@@ -142,15 +145,15 @@ export default function Card6() {
               src="/3unidades.png"
             />
             <WhiteSubText style={{ fontSize: 16, fontWeight: "700" }}>
-              De R$ 1.145,00 por apenas:
+              De R$ 594,00 por apenas:
             </WhiteSubText>
             <WhiteSubText
               style={{ fontSize: 40, fontWeight: "900", alignItems: "center" }}
             >
-              <span style={{ fontSize: 16 }}>12X</span>&nbsp;R$ 44,68
+              <span style={{ fontSize: 16 }}>12X</span>&nbsp;R$ 29,70
             </WhiteSubText>
             <WhiteSubText style={{ fontSize: 16, fontWeight: "700" }}>
-              ou R$ 445,00 à vista
+              ou R$ 297,00 à vista
             </WhiteSubText>
             <br />
             <Button white>Eu Quero</Button>
@@ -181,15 +184,15 @@ export default function Card6() {
           />
           {/* //trocar a foto 1 unidade */}
           <BlackSubText style={{ fontSize: 16, fontWeight: "700" }}>
-            De R$ 229,00 por apenas:
+            De R$ 297,00 por apenas:
           </BlackSubText>
           <BlackSubText
             style={{ fontSize: 40, fontWeight: "900", alignItems: "center" }}
           >
-            <spam style={{ fontSize: 16 }}>12X</spam>&nbsp;R$ 15,76
+            <spam style={{ fontSize: 16 }}>12X</spam>&nbsp;R$ 19,70
           </BlackSubText>
           <PinkSubText style={{ fontSize: 16, fontWeight: "700" }}>
-            ou R$ 157,00 à vista
+            ou R$ 197,00 à vista
           </PinkSubText>
           <br />
           <Button>Eu Quero</Button>

@@ -14,7 +14,7 @@ import {
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export default function Card1() {
+export default function Card1_rosa() {
   return (
     <Box
       sx={{
@@ -34,18 +34,30 @@ export default function Card1() {
         }}
       >
         <TextContainer>
-          <Text>
-
-          </Text>
-        Tenha uma Vida mais Leve:
+          <Text></Text>
+          Tenha uma Vida mais Leve:
           <HighlightTextContainer>
-            <Box sx={{fontWeight:500, fontSize: { xs: 15, md: 30 }, color: "white" }}>Acabe de vez com a retenção de líquidos e o inchaço</Box >
- 
+            <Box
+              sx={{
+                fontWeight: 500,
+                fontSize: { xs: 15, md: 30 },
+                color: "white",
+              }}
+            >
+              Acabe de vez com a retenção de líquidos e o inchaço
+            </Box>
           </HighlightTextContainer>
           <br />
-          <Box sx={{ fontWeight:300, fontSize: { xs: 15, md: 20 }, color: "white" }}>
-          Desperte a sua melhor versão com Dexfit! Esta cápsula exclusiva,
-           desenvolvida especialmente para mulheres, apresenta uma fórmula 100% natural.
+          <Box
+            sx={{
+              fontWeight: 300,
+              fontSize: { xs: 15, md: 20 },
+              color: "white",
+            }}
+          >
+            Desperte a sua melhor versão com Dexfit! Esta cápsula exclusiva,
+            desenvolvida especialmente para mulheres, apresenta uma fórmula 100%
+            natural.
           </Box>
           <br />
           <Button>EU QUERO EMAGRECER</Button>

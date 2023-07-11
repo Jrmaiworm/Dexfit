@@ -4,7 +4,7 @@ import { Button, CardText, SecText, Text } from "../styles";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-export default function Card3() {
+export default function Card3_rosa() {
   const [isAnimated, setIsAnimated] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,

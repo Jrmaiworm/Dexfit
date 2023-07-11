@@ -1,16 +1,11 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
-import {
-  Button,
-  PText,
-  Text,
-  TextCard,
-} from "../styles";
+import { Button, PText, Text, TextCard } from "../styles";
 import "animate.css";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-// Dá para usar esse card 7 no site roxo, vou refazer outro parecido para usar no site rosa
-export default function Card7() {
+// card7 para o site rosa
+export default function Card6_rosa() {
   const [isAnimated, setIsAnimated] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -28,34 +23,28 @@ export default function Card7() {
   const ListCard = () => {
     const options = [
       {
-        title: "VITAMINA C (ÁC. ASCÓRBICO) 45 MG",
+        title: "CAFÉ VERDE",
         subTitle:
-          "A vitamina C não só fortalece a imunidade, como também contribui para alcançar um corpo mais magro, acelerando o metabolismo.",
-        image: "/vitac.png",
+          "O café verde também tem ação diurética, combatendo a retenção de líquidos e inchaço corporal.",
       },
       {
-        title: "QUITOSANA 100 MG",
+        title: "TRANS RESVERATROL",
         subTitle:
-          "Faz com que você se sinta alimentada com uma quantidade mais baixa de alimentos. Isso é possível porque seu organismo vai reter mais nutrientes.",
-        image: "/quito.png",
+          "Auxilia na prevenção do envelhecimento, auxiliando a elasticidade e firmeza da pele, preserva a juventude da pele e combate os radicais livres.",
       },
       {
-        title: "COLÁGENO HIDROLISADO 300 MG",
-        subTitle:
-          "Promove firmeza à pele da sua barriga, braços, rosto e perna, reduzindo a flacidez que ocorre depois de",
-        image: "/emagrecer 1.png",
+        title: "VITAMINA B12",
+        subTitle: "Combate a retenção de líquidos e o inchaço.",
       },
       {
-        title: "SPIRULINA 100 MG",
+        title: "INULINA",
         subTitle:
-          "Mais um aliado para que seu organismo se sinta saciado com menos quantidade de comida.",
-        image: "/spiru.png",
+          "Quando fermentadas pelas bactérias no intestino contribui para a absorção de cálcio, magnésio e ferro. Além de contribuírem para a saúde intestinal.",
       },
       {
-        title: "PSYLLIUM 100 MG",
+        title: "EXTRATO DE LARANJA MORO",
         subTitle:
-          "Trabalha retirando a gordura do seu organismo e, para esse feito, ele usa nada menos que as fezes.",
-        image: "/psy.png",
+          "Laranja Moro ajuda no processo de lipólise no organismo, o que promove a redução de líquidos, e sensação de inchaço.",
       },
     ];
 
@@ -71,7 +60,7 @@ export default function Card7() {
               animationDelay: `${0.5 + 0.2 * index}s`,
             }}
           >
-            <Box
+            {/* <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
@@ -89,7 +78,7 @@ export default function Card7() {
                 height={100}
                 src={option.image}
               />
-            </Box>
+            </Box> */}
             <Box
               sx={{
                 display: "flex",

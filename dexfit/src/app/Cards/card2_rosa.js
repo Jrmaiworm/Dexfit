@@ -5,7 +5,7 @@ import "animate.css";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-export default function Card2() {
+export default function Card2_rosa() {
   const [isAnimated1, setIsAnimated1] = useState(false);
   const [isAnimated2, setIsAnimated2] = useState(false);
   const [isAnimated3, setIsAnimated3] = useState(false);
