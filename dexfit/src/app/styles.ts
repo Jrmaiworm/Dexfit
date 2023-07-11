@@ -143,8 +143,8 @@ export const Button = styled.a.attrs({
   text-align: center;
 
   &:hover {
-    background-color: ${(props) => (props.white ? "#f687b3" : "#000")};
-    color: ${(props) => (props.white ? "#000" : "white")};
+    background-color: ${(props) => (props.white ? "#f687b3" : "#f687b3")};
+    color: ${(props) => (props.white ? "#000" : "#000")};
   }
 
   @media (max-width: 768px) {
