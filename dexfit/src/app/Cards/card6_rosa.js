@@ -114,6 +114,9 @@ export default function Card6_rosa() {
           width: { xs: "100%", md: "50%" },
           padding: { xs: 0, md: 10 },
           justifyContent: "center",
+          display:'flex',
+          flexDirection: "column",
+
         }}
       >
         <Image

@@ -129,7 +129,7 @@ export default function Card5_rosa() {
               backgroundColor: theme.colors.secondary,
               borderBottomLeftRadius: 5,
               borderBottomRightRadius: 5,
-              padding: { xs: 5, md: 10 },
+              padding: { xs: 5, md: 5 },
               boxShadow: "0px 4px 15px  rgba(255, 1, 129, 1)",
               animation: isAnimated ? "fadeInUp 1s" : "",
               animationDelay: "1s",
@@ -138,6 +138,7 @@ export default function Card5_rosa() {
             <CardText style={{ fontWeight: "700", fontSize: 24 }}>
               Kit 3 unidades
             </CardText>
+            <br/>
             <Image
               style={{ objectFit: "contain" }}
               layout="responsive"
