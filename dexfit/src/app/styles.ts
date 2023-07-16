@@ -23,8 +23,7 @@ export const Container = styled.div`
 export const PinkText = styled.div`
   color: #ef3693;
 `;
-export const TextContainer = styled.div`
-`;
+export const TextContainer = styled.div``;
 
 export const WhiteText = styled.div`
   color: white;
@@ -88,7 +87,6 @@ export const SecText = styled.div`
   font-size: 20px;
   align-self: center;
   justify-content: center;
-
 `;
 export const Text = styled.text<TextProps>`
   color: ${(props) => (props.pink ? "rgba(255, 1, 129, 1)" : "white")};
@@ -144,6 +142,42 @@ export const Button = styled.a.attrs({
 
   &:hover {
     background-color: ${(props) => (props.white ? "#f687b3" : "#f687b3")};
+    color: ${(props) => (props.white ? "#000" : "#000")};
+  }
+
+  @media (max-width: 768px) {
+    height: 60px;
+    font-size: 16px;
+  }
+`;
+
+export const PurpleButton = styled.a.attrs({
+  href: "https://wa.me/47999847270",
+  target: "_blank",
+})<ButtonProps>`
+  height: 78px;
+  width: 100%;
+  background-color: ${(props) =>
+    props.white ? "white" : "rgba(140, 0, 255, 1)"};
+  color: ${(props) => (props.white ? "rgba(140, 0, 255, 1)" : "white")};
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  box-shadow: ${(props) =>
+    props.white
+      ? "0px 4px 10px rgba(255, 255, 255, 1)"
+      : "0px 4px 10px rgba(140, 0, 255, 1)"};
+
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    background-color: ${(props) =>
+      props.white ? "rgba(177, 97, 255, 1)" : "rgba(177, 97, 255, 1)"};
     color: ${(props) => (props.white ? "#000" : "#000")};
   }
 

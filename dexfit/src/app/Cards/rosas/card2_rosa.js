@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
-import { Paragraph, PinkText } from "../styles";
+import { Paragraph, PinkText } from "../../styles";
 import "animate.css";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";

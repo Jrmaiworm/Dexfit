@@ -15,10 +15,10 @@ import {
   TextContainer,
   Title,
   WhiteSubText,
-} from "../styles";
+} from "../../styles";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import theme from "../theme";
+import theme from "../../theme";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -38,7 +38,7 @@ export default function Card5_rosa() {
   }, [inView]);
   return (
     <Box
-    ref={ref}
+      ref={ref}
       sx={{
         // boxShadow: '0 6px 80px -18px rgba(220,220,220, 0.81)',
         display: "flex",
@@ -56,7 +56,7 @@ export default function Card5_rosa() {
         }}
       >
         <Text>
-          Chegou o <Text pink>de você retomar o controle,</Text>
+          Chegou o <Text pink>momento de você retomar o controle,</Text>
           <Text> recuperar o corpo e elevar sua autoestima ao máximo!</Text>
         </Text>
       </Box>
@@ -88,8 +88,6 @@ export default function Card5_rosa() {
           </BlackText>
           <Image
             style={{ objectFit: "contain" }}
-         
-          
             width={220}
             height={220}
             src="/5unidades.png"
@@ -135,16 +133,14 @@ export default function Card5_rosa() {
               padding: { xs: 0, md: 5 },
               boxShadow: "0px 4px 15px  rgba(255, 1, 129, 1)",
               animation: isAnimated ? "fadeIn 1s" : "",
-        
             }}
           >
             <CardText style={{ fontWeight: "700", fontSize: 24 }}>
               Kit 3 unidades
             </CardText>
-          
+
             <Image
               style={{ objectFit: "contain" }}
-          
               width={320}
               height={300}
               src="/3unidades.png"
@@ -182,7 +178,6 @@ export default function Card5_rosa() {
           </BlackText>
           <Image
             style={{ objectFit: "contain" }}
-          
             width={220}
             height={220}
             src="/1unidade.png"

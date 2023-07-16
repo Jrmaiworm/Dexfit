@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import { Montserrat } from "next/font/google";
-import theme from "../theme";
+import theme from "../../theme";
 import Image from "next/image";
 import "animate.css/animate.min.css";
 import {
@@ -12,7 +12,7 @@ import {
   TextCard,
   TextContainer,
   Title,
-} from "../styles";
+} from "../../styles";
 import "animate.css";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";

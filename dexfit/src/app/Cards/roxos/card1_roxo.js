@@ -7,14 +7,15 @@ import {
   HighlightTextContainer,
   Paragraph,
   PinkText,
+  PurpleButton,
   SubText,
   Text,
   TextContainer,
-} from "../styles";
+} from "../../styles";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export default function Card1_rosa() {
+export default function Card1_roxo() {
   return (
     <Box
       sx={{
@@ -34,8 +35,7 @@ export default function Card1_rosa() {
         }}
       >
         <TextContainer>
-          <Text></Text>
-          Tenha uma Vida mais Leve:
+          Volte ao seu peso antes da gravidez
           <HighlightTextContainer>
             <Box
               sx={{
@@ -44,7 +44,7 @@ export default function Card1_rosa() {
                 color: "white",
               }}
             >
-              Acabe de vez com a retenção de líquidos e o inchaço
+              com apenas duas cápsulas por dia!
             </Box>
           </HighlightTextContainer>
           <br />
@@ -55,12 +55,11 @@ export default function Card1_rosa() {
               color: "white",
             }}
           >
-            Desperte a sua melhor versão com Dexfit! Esta cápsula exclusiva,
-            desenvolvida especialmente para mulheres, apresenta uma fórmula 100%
-            natural.
+            Mãe Slim: A solução natural e Segura para voltar ao peso de antes da
+            gravidez rapidamente, sem efeitos colaterais!
           </Box>
           <br />
-          <Button>EU QUERO EMAGRECER</Button>
+          <PurpleButton>EU QUERO EMAGRECER</PurpleButton>
         </TextContainer>
       </Box>
 
@@ -70,7 +69,7 @@ export default function Card1_rosa() {
           layout="responsive"
           width={600}
           height={475}
-          src="/IMAGEMPRODUT.png"
+          src="/MaeSlim.png"
         />
       </Box>
     </Box>
