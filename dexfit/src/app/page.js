@@ -13,6 +13,8 @@ import Card2_roxo from "./Cards/roxos/card2_roxo";
 import Card3_roxo from "./Cards/roxos/card3_roxo";
 import Card4_roxo from "./Cards/roxos/card4_roxo";
 import Card5_roxo from "./Cards/roxos/card5_roxo";
+import Card6_roxo from "./Cards/roxos/card6_roxo";
+import Card7_roxo from "./Cards/roxos/card7_roxo";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -73,6 +75,10 @@ export default function Home() {
         <Card4_roxo />
 
         <Card5_roxo />
+
+        <Card6_roxo />
+
+        <Card7_roxo />
       </div>
     </Box>
   );
